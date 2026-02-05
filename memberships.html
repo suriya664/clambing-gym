@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberships - Summit Climb | Flexible Plans for Every Climber</title>
+    <meta name="description"
+        content="Choose the perfect membership plan at Summit Climb. Day passes, monthly, annual, family plans, and student discounts available.">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="./favicon.png" alt="Summit Climb Logo">
+                <span class="brand-name">Summit Climb</span>
+            </a>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-v2.html">Home 2</a></li>
+                <li><a href="memberships.html" class="active">Memberships</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('./images/hero-bg.png');">
+        <div class="hero-content">
+            <h1>Find Your Perfect Membership</h1>
+            <p>Flexible plans designed for climbers of all levels and lifestyles</p>
+        </div>
+    </section>
+
+    <!-- Membership Plans -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Choose Your Plan</h2>
+                <p class="text-lg text-secondary reveal">All memberships include access to our full facility and
+                    equipment</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- Day Pass -->
+                <div class="card reveal">
+                    <div class="card-header">
+                        <h3 class="card-title">Day Pass</h3>
+                        <div class="text-4xl font-bold" style="color: var(--primary);">$25</div>
+                        <p class="text-secondary text-sm">Per visit</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Full day access to all climbing areas</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Equipment rental available</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Perfect for first-timers</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">No commitment required</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="login.html" class="btn btn-outline w-full">Get Day Pass</a>
+                    </div>
+                </div>
+
+                <!-- Monthly Membership -->
+                <div class="card reveal" style="border: 2px solid var(--primary); position: relative;">
+                    <div
+                        style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background-color: var(--primary); color: white; padding: 4px 16px; border-radius: 12px; font-size: 0.875rem; font-weight: 600;">
+                        MOST POPULAR
+                    </div>
+                    <div class="card-header">
+                        <h3 class="card-title">Monthly</h3>
+                        <div class="text-4xl font-bold" style="color: var(--primary);">$89</div>
+                        <p class="text-secondary text-sm">Per month</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Unlimited climbing access</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Free equipment storage</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">10% discount on classes</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Guest passes (2 per month)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Cancel anytime</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="login.html" class="btn btn-primary w-full">Start Membership</a>
+                    </div>
+                </div>
+
+                <!-- Annual Membership -->
+                <div class="card reveal">
+                    <div class="card-header">
+                        <h3 class="card-title">Annual</h3>
+                        <div class="text-4xl font-bold" style="color: var(--primary);">$899</div>
+                        <p class="text-secondary text-sm">$75/month - Save $169!</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">All monthly benefits included</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">20% discount on classes</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Priority event registration</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Free gear rental (shoes & harness)</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Best value for serious climbers</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="login.html" class="btn btn-outline w-full">Get Annual Plan</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Family & Student Plans -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Family Plan -->
+                <div class="card reveal">
+                    <div class="card-header">
+                        <h3 class="card-title">Family Plan</h3>
+                        <div class="text-4xl font-bold" style="color: var(--primary);">$199</div>
+                        <p class="text-secondary text-sm">Per month (up to 4 members)</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Unlimited access for whole family</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Youth program discounts</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Family locker included</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Birthday party discounts</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="login.html" class="btn btn-primary w-full">Get Family Plan</a>
+                    </div>
+                </div>
+
+                <!-- Student Discount -->
+                <div class="card reveal">
+                    <div class="card-header">
+                        <h3 class="card-title">Student Discount</h3>
+                        <div class="text-4xl font-bold" style="color: var(--primary);">$69</div>
+                        <p class="text-secondary text-sm">Per month (with valid student ID)</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">All monthly membership benefits</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Valid student ID required</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Perfect for college students</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Study lounge access</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="login.html" class="btn btn-primary w-full">Get Student Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="text-center mb-8 reveal">Compare Plans</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full"
+                    style="background-color: var(--bg-primary); border-radius: 1rem; overflow: hidden;">
+                    <thead style="background-color: var(--bg-tertiary);">
+                        <tr>
+                            <th class="p-4 text-left">Feature</th>
+                            <th class="p-4 text-center">Day Pass</th>
+                            <th class="p-4 text-center">Monthly</th>
+                            <th class="p-4 text-center">Annual</th>
+                            <th class="p-4 text-center">Family</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td class="p-4">Climbing Access</td>
+                            <td class="p-4 text-center">1 Day</td>
+                            <td class="p-4 text-center">Unlimited</td>
+                            <td class="p-4 text-center">Unlimited</td>
+                            <td class="p-4 text-center">Unlimited</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td class="p-4">Equipment Storage</td>
+                            <td class="p-4 text-center">—</td>
+                            <td class="p-4 text-center">✓</td>
+                            <td class="p-4 text-center">✓</td>
+                            <td class="p-4 text-center">✓</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td class="p-4">Class Discount</td>
+                            <td class="p-4 text-center">—</td>
+                            <td class="p-4 text-center">10%</td>
+                            <td class="p-4 text-center">20%</td>
+                            <td class="p-4 text-center">15%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td class="p-4">Guest Passes</td>
+                            <td class="p-4 text-center">—</td>
+                            <td class="p-4 text-center">2/month</td>
+                            <td class="p-4 text-center">4/month</td>
+                            <td class="p-4 text-center">6/month</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4">Free Gear Rental</td>
+                            <td class="p-4 text-center">—</td>
+                            <td class="p-4 text-center">—</td>
+                            <td class="p-4 text-center">✓</td>
+                            <td class="p-4 text-center">—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container text-center">
+            <h2 class="reveal">Not Sure Which Plan is Right for You?</h2>
+            <p class="text-lg text-secondary mb-8 reveal">Contact our team for personalized recommendations</p>
+            <a href="contact.html" class="btn btn-primary btn-lg reveal">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./favicon.png" alt="Summit Climb Logo">
+                        <span class="brand-name">Summit Climb</span>
+                    </a>
+                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
+                        adventure.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
+                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
+                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
+                        <li><a href="facilities.html#training">Training Zone</a></li>
+                        <li><a href="shop.html">Shop & Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
+                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
+                        <li><a href="waiver.html">Waiver & Liability</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
+                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

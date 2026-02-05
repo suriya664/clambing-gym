@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Our Facilities - Summit Climb | World-Class Climbing Gym</title>
+    <meta name="description"
+        content="Explore our 15,000 sq ft climbing facility featuring bouldering walls, top-rope, lead climbing, training areas, and more.">
+    <meta name="keywords"
+        content="climbing gym facilities, bouldering walls, climbing walls, training area, climbing equipment">
+    <meta name="author" content="Summit Climb">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="./favicon.png" alt="Summit Climb Logo">
+                <span class="brand-name">Summit Climb</span>
+            </a>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-v2.html">Home 2</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="facilities.html" class="active">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 4rem 0;">
+        <div class="container text-center">
+            <h1 class="reveal" style="color: white; margin-bottom: 1rem;">Our Facilities</h1>
+            <p class="text-xl reveal" style="color: rgba(255, 255, 255, 0.95);">15,000 sq ft of world-class climbing
+                terrain and amenities</p>
+        </div>
+    </section>
+
+    <!-- Facility Overview -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">State-of-the-Art Climbing Experience</h2>
+                <p class="text-lg text-secondary reveal">Everything you need for an incredible climbing session</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">📏</div>
+                    <h3 class="card-title">15,000 sq ft</h3>
+                    <p class="text-secondary">Spacious facility with room to climb</p>
+                </div>
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">🧗</div>
+                    <h3 class="card-title">100+ Routes</h3>
+                    <p class="text-secondary">Constantly updated challenges</p>
+                </div>
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">📐</div>
+                    <h3 class="card-title">45 ft Walls</h3>
+                    <p class="text-secondary">Tall climbing for all styles</p>
+                </div>
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">🔄</div>
+                    <h3 class="card-title">Weekly Resets</h3>
+                    <p class="text-secondary">Fresh routes every week</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bouldering Area -->
+    <section id="bouldering" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <img src="./images/bouldering.png" alt="Bouldering Area" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="reveal">
+                    <h2 class="mb-4">Bouldering Area</h2>
+                    <p class="text-secondary mb-6">Our expansive bouldering area features walls up to 15 feet high with
+                        premium crash pads throughout. With over 60 problems ranging from V0 to V10, there's something
+                        for every skill level.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">15-foot walls with varied angles and features</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Premium crash pads for safe landings</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Overhangs, slabs, and vertical terrain</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Color-coded routes for easy identification</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Dedicated warm-up and beginner zones</span>
+                        </li>
+                    </ul>
+                    <a href="signup.html" class="btn btn-primary">Start Bouldering</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top-Rope & Lead Climbing -->
+    <section id="top-rope" class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal order-2 lg:order-1">
+                    <h2 class="mb-4">Top-Rope & Lead Climbing</h2>
+                    <p class="text-secondary mb-6">Experience the thrill of height on our 45-foot climbing walls.
+                        Whether you're learning to top-rope or pushing your limits on lead, we have the perfect terrain.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">45-foot walls with auto-belays and rope stations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">40+ top-rope and lead routes (5.6 to 5.13)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Multiple auto-belay stations for solo climbing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Lead climbing with quickdraws provided</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Varied terrain including cracks, aretes, and faces</span>
+                        </li>
+                    </ul>
+                    <a href="signup.html" class="btn btn-primary">Start Rope Climbing</a>
+                </div>
+                <div class="reveal order-1 lg:order-2">
+                    <div
+                        class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg h-96 flex items-center justify-center">
+                        <span class="text-white text-8xl">🧗‍♂️</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Area -->
+    <section id="training" class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <div
+                        class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg h-96 flex items-center justify-center">
+                        <span class="text-white text-8xl">💪</span>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h2 class="mb-4">Training Zone</h2>
+                    <p class="text-secondary mb-6">Take your climbing to the next level with our dedicated training area
+                        equipped with professional-grade equipment for strength and technique development.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Campus boards for power development</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Multiple hangboards for finger strength</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">System wall for technique training</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Free weights and resistance equipment</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Yoga mats and stretching area</span>
+                        </li>
+                    </ul>
+                    <a href="classes.html" class="btn btn-primary">Training Classes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Amenities & Services</h2>
+                <p class="text-lg text-secondary reveal">Everything you need for a comfortable visit</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card reveal">
+                    <div class="text-5xl mb-4">☕</div>
+                    <h3 class="card-title">Café & Lounge</h3>
+                    <p class="text-secondary">Relax with coffee, smoothies, and healthy snacks in our comfortable lounge
+                        area.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="text-5xl mb-4">🚿</div>
+                    <h3 class="card-title">Locker Rooms</h3>
+                    <p class="text-secondary">Clean, spacious locker rooms with showers and secure storage for your
+                        belongings.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="text-5xl mb-4">🎒</div>
+                    <h3 class="card-title">Gear Rental</h3>
+                    <p class="text-secondary">Full range of climbing shoes, harnesses, and chalk bags available for
+                        rent.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="text-5xl mb-4">🅿️</div>
+                    <h3 class="card-title">Free Parking</h3>
+                    <p class="text-secondary">Ample free parking right outside the facility for all members and guests.
+                    </p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="text-5xl mb-4">📶</div>
+                    <h3 class="card-title">Free WiFi</h3>
+                    <p class="text-secondary">Stay connected with complimentary high-speed WiFi throughout the facility.
+                    </p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="text-5xl mb-4">🛍️</div>
+                    <h3 class="card-title">Pro Shop</h3>
+                    <p class="text-secondary">Purchase climbing gear, apparel, and accessories from top brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour CTA -->
+    <section class="section" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);">
+        <div class="container text-center">
+            <h2 class="reveal" style="color: white;">Ready to Experience Our Facility?</h2>
+            <p class="text-xl mb-8 reveal" style="color: rgba(255, 255, 255, 0.95);">Visit us for a tour or start
+                climbing today</p>
+            <div class="flex gap-4 justify-center flex-wrap reveal">
+                <a href="signup.html" class="btn btn-lg" style="background-color: white; color: var(--primary);">Get
+                    Started</a>
+                <a href="contact.html" class="btn btn-outline btn-lg"
+                    style="color: white; border-color: white;">Schedule Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./favicon.png" alt="Summit Climb Logo">
+                        <span class="brand-name">Summit Climb</span>
+                    </a>
+                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
+                        adventure.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
+                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
+                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
+                        <li><a href="facilities.html#training">Training Zone</a></li>
+                        <li><a href="shop.html">Shop & Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
+                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
+                        <li><a href="waiver.html">Waiver & Liability</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
+                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

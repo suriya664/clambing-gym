@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Events & Competitions - Summit Climb | Climbing Community</title>
+    <meta name="description"
+        content="Join our climbing events, competitions, and social gatherings. Connect with the climbing community at Summit Climb.">
+    <meta name="keywords"
+        content="climbing events, climbing competitions, bouldering competitions, climbing community, outdoor trips">
+    <meta name="author" content="Summit Climb">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="./favicon.png" alt="Summit Climb Logo">
+                <span class="brand-name">Summit Climb</span>
+            </a>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-v2.html">Home 2</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 4rem 0;">
+        <div class="container text-center">
+            <h1 class="reveal" style="color: white; margin-bottom: 1rem;">Events & Competitions</h1>
+            <p class="text-xl reveal" style="color: rgba(255, 255, 255, 0.95);">Join our vibrant climbing community</p>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Upcoming Events</h2>
+                <p class="text-lg text-secondary reveal">Don't miss out on these exciting opportunities</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Event 1 -->
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">🏆</span>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3"
+                        style="background-color: var(--primary); color: white;">Competition</div>
+                    <h3 class="card-title">Spring Bouldering Comp</h3>
+                    <p class="text-secondary mb-4">Test your skills in our quarterly bouldering competition. All levels
+                        welcome with separate categories.</p>
+                    <div class="space-y-2 mb-4 text-sm text-secondary">
+                        <div class="flex items-center gap-2">
+                            <span>📅</span>
+                            <span>March 15, 2026</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>⏱️</span>
+                            <span>10:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💰</span>
+                            <span>$35 entry fee</span>
+                        </div>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary w-full">Register Now</a>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">🏔️</span>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3"
+                        style="background-color: var(--secondary); color: white;">Outdoor Trip</div>
+                    <h3 class="card-title">Red Rock Canyon Trip</h3>
+                    <p class="text-secondary mb-4">Join us for a weekend climbing adventure at Red Rock Canyon.
+                        Transportation and guides included.</p>
+                    <div class="space-y-2 mb-4 text-sm text-secondary">
+                        <div class="flex items-center gap-2">
+                            <span>📅</span>
+                            <span>April 5-7, 2026</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>⏱️</span>
+                            <span>3-day trip</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💰</span>
+                            <span>$250 per person</span>
+                        </div>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary w-full">Register Now</a>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">🎉</span>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3"
+                        style="background-color: var(--accent); color: white;">Social</div>
+                    <h3 class="card-title">Friday Night Social Climb</h3>
+                    <p class="text-secondary mb-4">Meet fellow climbers, make new friends, and enjoy discounted food and
+                        drinks from our café.</p>
+                    <div class="space-y-2 mb-4 text-sm text-secondary">
+                        <div class="flex items-center gap-2">
+                            <span>📅</span>
+                            <span>Every Friday</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>⏱️</span>
+                            <span>6:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💰</span>
+                            <span>Free for members</span>
+                        </div>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary w-full">Join Us</a>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">👨‍👩‍👧‍👦</span>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3"
+                        style="background-color: var(--primary); color: white;">Family Event</div>
+                    <h3 class="card-title">Family Climb Day</h3>
+                    <p class="text-secondary mb-4">Bring the whole family for a day of climbing, games, and activities.
+                        Kids climb free!</p>
+                    <div class="space-y-2 mb-4 text-sm text-secondary">
+                        <div class="flex items-center gap-2">
+                            <span>📅</span>
+                            <span>March 23, 2026</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>⏱️</span>
+                            <span>12:00 PM - 4:00 PM</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💰</span>
+                            <span>$15 per adult</span>
+                        </div>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary w-full">Register Now</a>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">🎓</span>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3"
+                        style="background-color: var(--secondary); color: white;">Workshop</div>
+                    <h3 class="card-title">Injury Prevention Workshop</h3>
+                    <p class="text-secondary mb-4">Learn from a sports physiotherapist about preventing and managing
+                        climbing injuries.</p>
+                    <div class="space-y-2 mb-4 text-sm text-secondary">
+                        <div class="flex items-center gap-2">
+                            <span>📅</span>
+                            <span>March 30, 2026</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>⏱️</span>
+                            <span>7:00 PM - 9:00 PM</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💰</span>
+                            <span>$20 per person</span>
+                        </div>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary w-full">Register Now</a>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">👩</span>
+                    </div>
+                    <div class="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3"
+                        style="background-color: var(--accent); color: white;">Community</div>
+                    <h3 class="card-title">Women's Climbing Night</h3>
+                    <p class="text-secondary mb-4">A supportive space for women climbers to connect, climb, and empower
+                        each other.</p>
+                    <div class="space-y-2 mb-4 text-sm text-secondary">
+                        <div class="flex items-center gap-2">
+                            <span>📅</span>
+                            <span>Every Wednesday</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>⏱️</span>
+                            <span>6:30 PM - 9:00 PM</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💰</span>
+                            <span>Free for members</span>
+                        </div>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary w-full">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Categories -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Event Types</h2>
+                <p class="text-lg text-secondary reveal">Something for everyone in our community</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">🏆</div>
+                    <h3 class="card-title">Competitions</h3>
+                    <p class="text-secondary">Quarterly bouldering and rope climbing competitions for all skill levels
+                    </p>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">🏔️</div>
+                    <h3 class="card-title">Outdoor Trips</h3>
+                    <p class="text-secondary">Guided climbing adventures to iconic outdoor destinations</p>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">🎉</div>
+                    <h3 class="card-title">Social Events</h3>
+                    <p class="text-secondary">Regular gatherings to connect with the climbing community</p>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div class="text-5xl mb-4">🎓</div>
+                    <h3 class="card-title">Workshops</h3>
+                    <p class="text-secondary">Educational sessions on technique, training, and safety</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Past Event Highlights</h2>
+                <p class="text-lg text-secondary reveal">Check out what we've been up to</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">🎊</span>
+                    </div>
+                    <h3 class="card-title">Winter Comp 2025</h3>
+                    <p class="text-secondary mb-2">Over 100 participants competed in our biggest event yet!</p>
+                    <p class="text-sm text-secondary">December 2025</p>
+                </div>
+
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">⛰️</span>
+                    </div>
+                    <h3 class="card-title">Joshua Tree Trip</h3>
+                    <p class="text-secondary mb-2">Amazing weekend of outdoor climbing with 30 members</p>
+                    <p class="text-sm text-secondary">November 2025</p>
+                </div>
+
+                <div class="card reveal">
+                    <div
+                        class="bg-gradient-to-br from-rose-400 to-rose-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">🎃</span>
+                    </div>
+                    <h3 class="card-title">Halloween Costume Climb</h3>
+                    <p class="text-secondary mb-2">Spooky fun with prizes for best costumes!</p>
+                    <p class="text-sm text-secondary">October 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);">
+        <div class="container text-center">
+            <h2 class="reveal" style="color: white;">Join Our Community</h2>
+            <p class="text-xl mb-8 reveal" style="color: rgba(255, 255, 255, 0.95);">Become a member to access all
+                events and connect with fellow climbers</p>
+            <div class="flex gap-4 justify-center flex-wrap reveal">
+                <a href="signup.html" class="btn btn-lg" style="background-color: white; color: var(--primary);">Become
+                    a Member</a>
+                <a href="schedule.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">View
+                    Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./favicon.png" alt="Summit Climb Logo">
+                        <span class="brand-name">Summit Climb</span>
+                    </a>
+                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
+                        adventure.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
+                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
+                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
+                        <li><a href="facilities.html#training">Training Zone</a></li>
+                        <li><a href="shop.html">Shop & Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
+                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
+                        <li><a href="waiver.html">Waiver & Liability</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
+                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

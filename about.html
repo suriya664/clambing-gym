@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Summit Climb | Our Story & Team</title>
+    <meta name="description"
+        content="Learn about Summit Climb's mission, meet our expert team, and discover our commitment to safety and community.">
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="./favicon.png" alt="Summit Climb Logo">
+                <span class="brand-name">Summit Climb</span>
+            </a>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-v2.html">Home 2</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('./images/hero-bg.png');">
+        <div class="hero-content">
+            <h1>About Summit Climb</h1>
+            <p>Building a community of passionate climbers since 2015</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <h2 class="mb-4">Our Story</h2>
+                    <p class="text-secondary mb-4">Founded in 2015, Summit Climb began with a simple mission: to make
+                        rock climbing accessible, safe, and fun for everyone. What started as a small bouldering gym has
+                        grown into one of the region's premier climbing facilities.</p>
+                    <p class="text-secondary mb-4">Our founders, passionate climbers themselves, recognized the need for
+                        a welcoming space where beginners could learn and experienced climbers could push their limits.
+                        Today, we serve over 5,000 members and continue to grow our community.</p>
+                    <p class="text-secondary">We're committed to fostering a supportive environment where climbers of
+                        all ages and abilities can challenge themselves, make friends, and discover the joy of climbing.
+                    </p>
+                </div>
+                <div class="reveal">
+                    <img src="./images/bouldering.png" alt="Summit Climb Facility" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Meet Our Team</h2>
+                <p class="text-lg text-secondary reveal">Expert climbers dedicated to your success</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card text-center reveal">
+                    <div
+                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-3xl font-bold">
+                        SM
+                    </div>
+                    <h3 class="text-lg font-semibold mb-1">Sarah Martinez</h3>
+                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Head Instructor</p>
+                    <p class="text-sm text-secondary mt-2">15 years climbing experience</p>
+                </div>
+
+                <div class="card text-center reveal">
+                    <div
+                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-3xl font-bold">
+                        JC
+                    </div>
+                    <h3 class="text-lg font-semibold mb-1">James Chen</h3>
+                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Lead Coach</p>
+                    <p class="text-sm text-secondary mt-2">Competition climber & coach</p>
+                </div>
+
+                <div class="card text-center reveal">
+                    <div
+                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-3xl font-bold">
+                        EP
+                    </div>
+                    <h3 class="text-lg font-semibold mb-1">Emily Patel</h3>
+                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Youth Program Director</p>
+                    <p class="text-sm text-secondary mt-2">Certified youth instructor</p>
+                </div>
+
+                <div class="card text-center reveal">
+                    <div
+                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white text-3xl font-bold">
+                        MT
+                    </div>
+                    <h3 class="text-lg font-semibold mb-1">Mike Thompson</h3>
+                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Safety Coordinator</p>
+                    <p class="text-sm text-secondary mt-2">AMGA certified guide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Standards -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Safety First</h2>
+                <p class="text-lg text-secondary reveal">Industry-leading safety standards and protocols</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card reveal">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="card-title">Certified Equipment</h3>
+                    <p class="text-secondary">All equipment meets or exceeds industry safety standards and is regularly
+                        inspected.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="text-4xl mb-4">👨‍🏫</div>
+                    <h3 class="card-title">Expert Staff</h3>
+                    <p class="text-secondary">Our instructors are certified professionals with extensive climbing and
+                        teaching experience.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="text-4xl mb-4">📋</div>
+                    <h3 class="card-title">Safety Protocols</h3>
+                    <p class="text-secondary">Comprehensive safety briefings and ongoing supervision ensure a secure
+                        environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container text-center">
+            <h2 class="reveal mb-4">Join Our Team</h2>
+            <p class="text-lg text-secondary mb-8 reveal">We're always looking for passionate climbers to join our team
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg reveal">View Open Positions</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./favicon.png" alt="Summit Climb Logo">
+                        <span class="brand-name">Summit Climb</span>
+                    </a>
+                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
+                        adventure.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
+                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
+                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
+                        <li><a href="facilities.html#training">Training Zone</a></li>
+                        <li><a href="shop.html">Shop & Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
+                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
+                        <li><a href="waiver.html">Waiver & Liability</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
+                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Classes & Programs - Summit Climb | Expert Climbing Instruction</title>
+    <meta name="description"
+        content="Explore our comprehensive climbing classes for all skill levels. From beginner fundamentals to advanced technique, youth programs to private coaching.">
+    <meta name="keywords"
+        content="climbing classes, climbing lessons, bouldering instruction, rock climbing courses, youth climbing programs">
+    <meta name="author" content="Summit Climb">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="./favicon.png" alt="Summit Climb Logo">
+                <span class="brand-name">Summit Climb</span>
+            </a>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-v2.html">Home 2</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="classes.html" class="active">Classes</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 4rem 0;">
+        <div class="container text-center">
+            <h1 class="reveal" style="color: white; margin-bottom: 1rem;">Classes & Programs</h1>
+            <p class="text-xl reveal" style="color: rgba(255, 255, 255, 0.95);">Expert instruction for climbers of all
+                ages and skill levels</p>
+        </div>
+    </section>
+
+    <!-- Class Categories -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Find Your Perfect Class</h2>
+                <p class="text-lg text-secondary reveal">From first-timers to experienced climbers, we have something
+                    for everyone</p>
+            </div>
+
+            <!-- Beginner Classes -->
+            <div class="mb-16">
+                <h3 class="mb-8 reveal">Beginner Classes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card reveal">
+                        <img src="./images/class.png" alt="Intro to Climbing"
+                            class="rounded-lg mb-4 w-full h-48 object-cover">
+                        <h4 class="card-title">Intro to Climbing</h4>
+                        <p class="text-secondary mb-4">Perfect for absolute beginners. Learn basic techniques, safety
+                            protocols, and gain confidence on the wall.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Mon, Wed, Fri - 6:00 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>90 minutes</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 8 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$45 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🧗‍♀️</span>
+                        </div>
+                        <h4 class="card-title">Beginner Fundamentals</h4>
+                        <p class="text-secondary mb-4">Build a strong foundation with proper footwork, body positioning,
+                            and movement techniques.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Tue, Thu - 7:00 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>2 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 10 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$50 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🎯</span>
+                        </div>
+                        <h4 class="card-title">Bouldering Basics</h4>
+                        <p class="text-secondary mb-4">Learn the essentials of bouldering including falling safely,
+                            problem-solving, and route reading.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Sat - 10:00 AM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>2 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 6 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$55 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intermediate Classes -->
+            <div class="mb-16">
+                <h3 class="mb-8 reveal">Intermediate Classes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🧗</span>
+                        </div>
+                        <h4 class="card-title">Technique Development</h4>
+                        <p class="text-secondary mb-4">Refine your climbing with advanced footwork, dynamic movements,
+                            and efficient energy use.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Mon, Wed - 7:30 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>2 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 8 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$60 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">⛓️</span>
+                        </div>
+                        <h4 class="card-title">Lead Climbing</h4>
+                        <p class="text-secondary mb-4">Learn to lead climb safely with proper clipping technique, rope
+                            management, and fall practice.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Tue, Thu - 6:00 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>2.5 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 6 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$70 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">📖</span>
+                        </div>
+                        <h4 class="card-title">Route Reading</h4>
+                        <p class="text-secondary mb-4">Develop your ability to read routes, plan sequences, and climb
+                            more efficiently.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Sat - 2:00 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>2 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 8 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$55 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Classes -->
+            <div class="mb-16">
+                <h3 class="mb-8 reveal">Advanced Classes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-red-400 to-red-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">💪</span>
+                        </div>
+                        <h4 class="card-title">Power & Strength</h4>
+                        <p class="text-secondary mb-4">Build explosive power and finger strength for harder grades with
+                            targeted training.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Mon, Wed, Fri - 6:00 AM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>90 minutes</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 6 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$75 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🎪</span>
+                        </div>
+                        <h4 class="card-title">Competition Prep</h4>
+                        <p class="text-secondary mb-4">Prepare for competitions with mental training, strategy, and
+                            performance optimization.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Tue, Thu - 8:00 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>2 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 6 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$80 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🏔️</span>
+                        </div>
+                        <h4 class="card-title">Outdoor Transition</h4>
+                        <p class="text-secondary mb-4">Learn to climb outdoors safely with anchor building, route
+                            finding, and outdoor ethics.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Sun - 8:00 AM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>Full day</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 4 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$150 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Youth Programs -->
+            <div class="mb-16">
+                <h3 class="mb-8 reveal">Youth Programs</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">👶</span>
+                        </div>
+                        <h4 class="card-title">Little Climbers (Ages 4-6)</h4>
+                        <p class="text-secondary mb-4">Introduction to climbing through games, activities, and fun
+                            challenges for our youngest climbers.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Sat - 9:00 AM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>45 minutes</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 6 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$35 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">👧</span>
+                        </div>
+                        <h4 class="card-title">Youth Climbing (Ages 7-12)</h4>
+                        <p class="text-secondary mb-4">Build strength, confidence, and skills in a fun, supportive
+                            environment designed for kids.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Sat, Sun - 11:00 AM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>60 minutes</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 10 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$40 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-lime-400 to-lime-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🧑</span>
+                        </div>
+                        <h4 class="card-title">Teen Team (Ages 13-17)</h4>
+                        <p class="text-secondary mb-4">Competitive team training for teens serious about climbing and
+                            personal development.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Tue, Thu - 5:00 PM</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>2 hours</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>👥</span>
+                                <span>Max 12 students</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$65 per class</span>
+                            </div>
+                        </div>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Private Coaching -->
+            <div>
+                <h3 class="mb-8 reveal">Private Coaching</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="card reveal">
+                        <h4 class="card-title">1-on-1 Coaching</h4>
+                        <p class="text-secondary mb-4">Personalized instruction tailored to your specific goals and
+                            climbing style.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Flexible scheduling</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>60 or 90 minutes</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$100/hour</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-full">Schedule Session</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <h4 class="card-title">Small Group (2-4 people)</h4>
+                        <p class="text-secondary mb-4">Train with friends while receiving expert coaching in a
+                            semi-private setting.</p>
+                        <div class="space-y-2 mb-4 text-sm text-secondary">
+                            <div class="flex items-center gap-2">
+                                <span>📅</span>
+                                <span>Flexible scheduling</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>⏱️</span>
+                                <span>90 minutes</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>💰</span>
+                                <span>$150 per session</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary w-full">Schedule Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);">
+        <div class="container text-center">
+            <h2 class="reveal" style="color: white;">Ready to Start Learning?</h2>
+            <p class="text-xl mb-8 reveal" style="color: rgba(255, 255, 255, 0.95);">Book your first class today and
+                experience expert instruction</p>
+            <div class="flex gap-4 justify-center flex-wrap reveal">
+                <a href="signup.html" class="btn btn-lg" style="background-color: white; color: var(--primary);">Sign Up
+                    Now</a>
+                <a href="contact.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Ask
+                    Questions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./favicon.png" alt="Summit Climb Logo">
+                        <span class="brand-name">Summit Climb</span>
+                    </a>
+                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
+                        adventure.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
+                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
+                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
+                        <li><a href="facilities.html#training">Training Zone</a></li>
+                        <li><a href="shop.html">Shop & Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
+                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
+                        <li><a href="waiver.html">Waiver & Liability</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
+                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Pro Shop & Rentals - Summit Climb | Climbing Gear</title>
+    <meta name="description"
+        content="Shop climbing gear, apparel, and accessories. Rent shoes, harnesses, and equipment at Summit Climb.">
+    <meta name="keywords" content="climbing gear, climbing shoes, harnesses, chalk bags, climbing apparel, gear rental">
+    <meta name="author" content="Summit Climb">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="apple-touch-icon" href="./favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="./favicon.png" alt="Summit Climb Logo">
+                <span class="brand-name">Summit Climb</span>
+            </a>
+
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home-v2.html">Home 2</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+            </ul>
+
+            <div class="flex items-center gap-3">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="section"
+        style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 4rem 0;">
+        <div class="container text-center">
+            <h1 class="reveal" style="color: white; margin-bottom: 1rem;">Pro Shop & Rentals</h1>
+            <p class="text-xl reveal" style="color: rgba(255, 255, 255, 0.95);">Everything you need for your climbing
+                adventure</p>
+        </div>
+    </section>
+
+    <!-- Rental Equipment -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Equipment Rentals</h2>
+                <p class="text-lg text-secondary reveal">Quality gear available for rent at affordable prices</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card reveal text-center">
+                    <div
+                        class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">👟</span>
+                    </div>
+                    <h3 class="card-title">Climbing Shoes</h3>
+                    <p class="text-secondary mb-4">Premium shoes from top brands in all sizes</p>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$5</div>
+                    <p class="text-sm text-secondary mb-4">per visit</p>
+                    <a href="contact.html" class="btn btn-outline w-full">Reserve</a>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div
+                        class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">🎒</span>
+                    </div>
+                    <h3 class="card-title">Harness</h3>
+                    <p class="text-secondary mb-4">Comfortable, well-maintained harnesses</p>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$5</div>
+                    <p class="text-sm text-secondary mb-4">per visit</p>
+                    <a href="contact.html" class="btn btn-outline w-full">Reserve</a>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div
+                        class="bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">⚪</span>
+                    </div>
+                    <h3 class="card-title">Chalk Bag</h3>
+                    <p class="text-secondary mb-4">Chalk bag with premium chalk included</p>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$3</div>
+                    <p class="text-sm text-secondary mb-4">per visit</p>
+                    <a href="contact.html" class="btn btn-outline w-full">Reserve</a>
+                </div>
+
+                <div class="card reveal text-center">
+                    <div
+                        class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                        <span class="text-white text-6xl">📦</span>
+                    </div>
+                    <h3 class="card-title">Full Package</h3>
+                    <p class="text-secondary mb-4">Shoes, harness, and chalk bag bundle</p>
+                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$10</div>
+                    <p class="text-sm text-secondary mb-4">per visit</p>
+                    <a href="contact.html" class="btn btn-primary w-full">Reserve</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-secondary">💡 <strong>Members get free rentals!</strong> <a href="memberships.html"
+                        class="text-primary">Learn more about memberships</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Products -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal">Featured Products</h2>
+                <p class="text-lg text-secondary reveal">Top-quality gear from leading brands</p>
+            </div>
+
+            <!-- Climbing Shoes -->
+            <div class="mb-16">
+                <h3 class="mb-8 reveal">Climbing Shoes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-red-400 to-red-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">👟</span>
+                        </div>
+                        <h4 class="card-title">La Sportiva Tarantulace</h4>
+                        <p class="text-secondary mb-4">Perfect beginner shoe with comfort and performance</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$89.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">👟</span>
+                        </div>
+                        <h4 class="card-title">Scarpa Instinct VS</h4>
+                        <p class="text-secondary mb-4">High-performance shoe for advanced climbers</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$189.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">👟</span>
+                        </div>
+                        <h4 class="card-title">Five Ten Anasazi</h4>
+                        <p class="text-secondary mb-4">Versatile all-around climbing shoe</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$139.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">👟</span>
+                        </div>
+                        <h4 class="card-title">Evolv Shaman</h4>
+                        <p class="text-secondary mb-4">Aggressive shoe for steep terrain</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$169.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Harnesses -->
+            <div class="mb-16">
+                <h3 class="mb-8 reveal">Harnesses</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🎒</span>
+                        </div>
+                        <h4 class="card-title">Black Diamond Momentum</h4>
+                        <p class="text-secondary mb-4">Comfortable all-around harness</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$59.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🎒</span>
+                        </div>
+                        <h4 class="card-title">Petzl Aquila</h4>
+                        <p class="text-secondary mb-4">Lightweight performance harness</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$79.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🎒</span>
+                        </div>
+                        <h4 class="card-title">Arc'teryx AR-395a</h4>
+                        <p class="text-secondary mb-4">Premium alpine harness</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$119.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accessories -->
+            <div>
+                <h3 class="mb-8 reveal">Accessories & Apparel</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">⚪</span>
+                        </div>
+                        <h4 class="card-title">Premium Chalk</h4>
+                        <p class="text-secondary mb-4">High-quality climbing chalk</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$12.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🎒</span>
+                        </div>
+                        <h4 class="card-title">Chalk Bags</h4>
+                        <p class="text-secondary mb-4">Various styles and colors</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$19.95</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">👕</span>
+                        </div>
+                        <h4 class="card-title">Summit Climb Apparel</h4>
+                        <p class="text-secondary mb-4">T-shirts, hoodies, and more</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$24.95+</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+
+                    <div class="card reveal">
+                        <div
+                            class="bg-gradient-to-br from-lime-400 to-lime-600 rounded-lg mb-4 h-48 flex items-center justify-center">
+                            <span class="text-white text-6xl">🧤</span>
+                        </div>
+                        <h4 class="card-title">Training Accessories</h4>
+                        <p class="text-secondary mb-4">Finger trainers, resistance bands</p>
+                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$29.95+</div>
+                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Discounts -->
+    <section class="section">
+        <div class="container">
+            <div class="card reveal text-center"
+                style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);">
+                <div class="p-8">
+                    <h2 class="mb-4" style="color: white;">Member Exclusive Benefits</h2>
+                    <p class="text-xl mb-6" style="color: rgba(255, 255, 255, 0.95);">Members receive 15% off all pro
+                        shop purchases and free equipment rentals!</p>
+                    <a href="memberships.html" class="btn btn-lg"
+                        style="background-color: white; color: var(--primary);">Become a Member</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container text-center">
+            <h2 class="reveal">Need Help Choosing?</h2>
+            <p class="text-xl mb-8 reveal text-secondary">Our expert staff can help you find the perfect gear for your
+                climbing style</p>
+            <div class="flex gap-4 justify-center flex-wrap reveal">
+                <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+                <a href="index.html" class="btn btn-outline btn-lg">Visit the Gym</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./favicon.png" alt="Summit Climb Logo">
+                        <span class="brand-name">Summit Climb</span>
+                    </a>
+                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
+                        adventure.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
+                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
+                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
+                        <li><a href="facilities.html#training">Training Zone</a></li>
+                        <li><a href="shop.html">Shop & Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
+                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
+                        <li><a href="waiver.html">Waiver & Liability</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
+                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
