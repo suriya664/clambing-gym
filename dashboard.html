@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
     <style>
         .dashboard-container {
@@ -184,32 +185,32 @@
         <aside class="dashboard-sidebar">
             <nav>
                 <a href="dashboard.html" class="active">
-                    <span>📊</span>
+                    <i class="fas fa-chart-line"></i>
                     <span>Dashboard</span>
                 </a>
                 <a href="dashboard-membership.html">
-                    <span>💳</span>
+                    <i class="fas fa-id-card"></i>
                     <span>Membership</span>
                 </a>
                 <a href="dashboard-classes.html">
-                    <span>📅</span>
+                    <i class="fas fa-calendar-check"></i>
                     <span>Booked Classes</span>
                 </a>
                 <a href="dashboard-payments.html">
-                    <span>💰</span>
+                    <i class="fas fa-credit-card"></i>
                     <span>Payment History</span>
                 </a>
                 <a href="dashboard-progress.html">
-                    <span>📈</span>
+                    <i class="fas fa-running"></i>
                     <span>Progress Tracker</span>
                 </a>
                 <hr style="margin: 1rem 0; border-color: var(--border-color);">
                 <a href="index.html">
-                    <span>🏠</span>
+                    <i class="fas fa-home"></i>
                     <span>Back to Home</span>
                 </a>
                 <a href="login.html" style="color: var(--danger);">
-                    <span>🚪</span>
+                    <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>
             </nav>
@@ -219,11 +220,11 @@
         <main class="dashboard-main">
             <div class="dashboard-header">
                 <div>
-                    <h1 class="text-3xl font-bold mb-1">Welcome Back, John!</h1>
+                    <h1 class="text-3xl font-bold mb-1"><i class="fas fa-user-circle me-3"></i>Welcome Back, John!</h1>
                     <p class="text-secondary">Here's your climbing activity overview</p>
                 </div>
                 <button class="filter-toggle">
-                    <span>🔍</span>
+                    <i class="fas fa-filter me-2"></i>
                     <span>Filters</span>
                 </button>
             </div>
@@ -233,7 +234,7 @@
                 <div class="stat-card">
                     <div class="flex items-center justify-between mb-2">
                         <h3 class="text-sm font-semibold text-secondary">Total Visits</h3>
-                        <span class="text-2xl">🧗</span>
+                        <span class="text-2xl text-primary"><i class="fas fa-climbing-rope"></i></span>
                     </div>
                     <div class="text-3xl font-bold" style="color: var(--primary);">42</div>
                     <p class="text-sm text-secondary mt-1">This month</p>
@@ -242,7 +243,7 @@
                 <div class="stat-card">
                     <div class="flex items-center justify-between mb-2">
                         <h3 class="text-sm font-semibold text-secondary">Classes Attended</h3>
-                        <span class="text-2xl">📚</span>
+                        <span class="text-2xl text-accent"><i class="fas fa-book-reader"></i></span>
                     </div>
                     <div class="text-3xl font-bold" style="color: var(--accent);">12</div>
                     <p class="text-sm text-secondary mt-1">This month</p>
@@ -251,7 +252,7 @@
                 <div class="stat-card">
                     <div class="flex items-center justify-between mb-2">
                         <h3 class="text-sm font-semibold text-secondary">Routes Completed</h3>
-                        <span class="text-2xl">🎯</span>
+                        <span class="text-2xl text-success"><i class="fas fa-bullseye"></i></span>
                     </div>
                     <div class="text-3xl font-bold" style="color: var(--success);">87</div>
                     <p class="text-sm text-secondary mt-1">All time</p>
@@ -260,7 +261,7 @@
                 <div class="stat-card">
                     <div class="flex items-center justify-between mb-2">
                         <h3 class="text-sm font-semibold text-secondary">Current Streak</h3>
-                        <span class="text-2xl">🔥</span>
+                        <span class="text-2xl text-warning"><i class="fas fa-fire"></i></span>
                     </div>
                     <div class="text-3xl font-bold" style="color: var(--warning);">7</div>
                     <p class="text-sm text-secondary mt-1">Days</p>
@@ -269,17 +270,19 @@
 
             <!-- Quick Actions -->
             <div class="card mb-8">
-                <h2 class="text-xl font-bold mb-4">Quick Actions</h2>
+                <h2 class="text-xl font-bold mb-4"><i class="fas fa-bolt me-2"></i>Quick Actions</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <a href="classes.html" class="btn btn-primary">Book a Class</a>
-                    <a href="schedule.html" class="btn btn-outline">View Schedule</a>
-                    <a href="dashboard-membership.html" class="btn btn-outline">Manage Membership</a>
+                    <a href="classes.html" class="btn btn-primary">Book a Class<i class="fas fa-plus ms-2"></i></a>
+                    <a href="schedule.html" class="btn btn-outline">View Schedule<i
+                            class="fas fa-calendar-alt ms-2"></i></a>
+                    <a href="dashboard-membership.html" class="btn btn-outline">Manage Membership<i
+                            class="fas fa-cog ms-2"></i></a>
                 </div>
             </div>
 
             <!-- Upcoming Classes -->
             <div class="card mb-8">
-                <h2 class="text-xl font-bold mb-4">Upcoming Classes</h2>
+                <h2 class="text-xl font-bold mb-4"><i class="fas fa-calendar-alt me-2"></i>Upcoming Classes</h2>
                 <div class="space-y-4">
                     <div class="flex items-center justify-between p-4 rounded-lg"
                         style="background-color: var(--bg-secondary);">
@@ -287,7 +290,8 @@
                             <h3 class="font-semibold">Advanced Technique</h3>
                             <p class="text-sm text-secondary">Tomorrow, 6:00 PM - 8:00 PM</p>
                         </div>
-                        <a href="dashboard-classes.html" class="btn btn-sm btn-outline">View Details</a>
+                        <a href="dashboard-classes.html" class="btn btn-sm btn-outline">View Details<i
+                                class="fas fa-info-circle ms-2"></i></a>
                     </div>
                     <div class="flex items-center justify-between p-4 rounded-lg"
                         style="background-color: var(--bg-secondary);">
@@ -295,31 +299,32 @@
                             <h3 class="font-semibold">Lead Climbing Certification</h3>
                             <p class="text-sm text-secondary">Friday, 5:00 PM - 7:00 PM</p>
                         </div>
-                        <a href="dashboard-classes.html" class="btn btn-sm btn-outline">View Details</a>
+                        <a href="dashboard-classes.html" class="btn btn-sm btn-outline">View Details<i
+                                class="fas fa-info-circle ms-2"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Recent Activity -->
             <div class="card">
-                <h2 class="text-xl font-bold mb-4">Recent Activity</h2>
+                <h2 class="text-xl font-bold mb-4"><i class="fas fa-history me-2"></i>Recent Activity</h2>
                 <div class="space-y-3">
                     <div class="flex items-start gap-3 pb-3" style="border-bottom: 1px solid var(--border-color);">
-                        <span class="text-2xl">✅</span>
+                        <span class="text-2xl text-success"><i class="fas fa-check-circle"></i></span>
                         <div>
                             <p class="font-medium">Completed Beginner Fundamentals</p>
                             <p class="text-sm text-secondary">2 days ago</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-3 pb-3" style="border-bottom: 1px solid var(--border-color);">
-                        <span class="text-2xl">🎉</span>
+                        <span class="text-2xl text-primary"><i class="fas fa-trophy"></i></span>
                         <div>
                             <p class="font-medium">Achieved 50 routes milestone</p>
                             <p class="text-sm text-secondary">1 week ago</p>
                         </div>
                     </div>
                     <div class="flex items-start gap-3">
-                        <span class="text-2xl">💪</span>
+                        <span class="text-2xl text-accent"><i class="fas fa-dumbbell"></i></span>
                         <div>
                             <p class="font-medium">Renewed monthly membership</p>
                             <p class="text-sm text-secondary">2 weeks ago</p>
@@ -351,7 +356,7 @@
                         <option>Events</option>
                     </select>
                 </div>
-                <button class="btn btn-primary w-full">Apply Filters</button>
+                <button class="btn btn-primary w-full">Apply Filters<i class="fas fa-check ms-2"></i></button>
             </div>
         </aside>
     </div>

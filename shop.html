@@ -28,6 +28,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -44,13 +45,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="home-v2.html">Home 2</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
-                <li><a href="classes.html">Classes</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="shop.html" class="active">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm navbar-btn"><i
+                            class="fas fa-user-plus me-2"></i>Join
+                        Now</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
@@ -67,10 +68,11 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="section"
+    <section class="section nav-clearance"
         style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 4rem 0;">
         <div class="container text-center">
-            <h1 class="reveal" style="color: white; margin-bottom: 1rem;">Pro Shop & Rentals</h1>
+            <h1 class="reveal" style="color: white; margin-bottom: 1rem;"><i class="fas fa-shopping-cart me-3"></i>Pro
+                Shop & Rentals</h1>
             <p class="text-xl reveal" style="color: rgba(255, 255, 255, 0.95);">Everything you need for your climbing
                 adventure</p>
         </div>
@@ -80,63 +82,73 @@
     <section class="section">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Equipment Rentals</h2>
+                <h2 class="reveal"><i class="fas fa-tools me-2"></i>Equipment Rentals</h2>
                 <p class="text-lg text-secondary reveal">Quality gear available for rent at affordable prices</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="card reveal text-center">
-                    <div
-                        class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                        <span class="text-white text-6xl">👟</span>
+                <div class="card reveal flex flex-col text-center h-full">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYEB6Syg2XCOJRhpTi0wkMeZTK84wJjv67-w&s"
+                        alt="Climbing Shoes" class="rounded-lg mb-6 h-48 w-full object-cover">
+                    <div class="flex-grow">
+                        <h3 class="card-title mb-2">Climbing Shoes</h3>
+                        <p class="text-secondary mb-4">Premium shoes from top brands in all sizes</p>
+                        <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$5</div>
+                        <p class="text-sm text-secondary mb-6">per visit</p>
                     </div>
-                    <h3 class="card-title">Climbing Shoes</h3>
-                    <p class="text-secondary mb-4">Premium shoes from top brands in all sizes</p>
-                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$5</div>
-                    <p class="text-sm text-secondary mb-4">per visit</p>
-                    <a href="contact.html" class="btn btn-outline w-full">Reserve</a>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn btn-outline w-full justify-center">Reserve</a>
+                    </div>
                 </div>
 
-                <div class="card reveal text-center">
-                    <div
-                        class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                        <span class="text-white text-6xl">🎒</span>
+                <div class="card reveal flex flex-col text-center h-full">
+                    <img src="https://m.media-amazon.com/images/I/71AimLYvD0L._AC_UF894,1000_QL80_.jpg" alt="Harness"
+                        class="rounded-lg mb-6 h-48 w-full object-cover">
+                    <div class="flex-grow">
+                        <h3 class="card-title mb-2">Harness</h3>
+                        <p class="text-secondary mb-4">Comfortable, well-maintained harnesses</p>
+                        <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$5</div>
+                        <p class="text-sm text-secondary mb-6">per visit</p>
                     </div>
-                    <h3 class="card-title">Harness</h3>
-                    <p class="text-secondary mb-4">Comfortable, well-maintained harnesses</p>
-                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$5</div>
-                    <p class="text-sm text-secondary mb-4">per visit</p>
-                    <a href="contact.html" class="btn btn-outline w-full">Reserve</a>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn btn-outline w-full justify-center">Reserve</a>
+                    </div>
                 </div>
 
-                <div class="card reveal text-center">
-                    <div
-                        class="bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                        <span class="text-white text-6xl">⚪</span>
+                <div class="card reveal flex flex-col text-center h-full">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIdjjenw7kIWQsJf9LWfc4NpZFi13xBUSiIA&s"
+                        alt="Chalk Bag" class="rounded-lg mb-6 h-48 w-full object-cover">
+                    <div class="flex-grow">
+                        <h3 class="card-title mb-2">Chalk Bag</h3>
+                        <p class="text-secondary mb-4">Chalk bag with premium chalk included</p>
+                        <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$3</div>
+                        <p class="text-sm text-secondary mb-6">per visit</p>
                     </div>
-                    <h3 class="card-title">Chalk Bag</h3>
-                    <p class="text-secondary mb-4">Chalk bag with premium chalk included</p>
-                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$3</div>
-                    <p class="text-sm text-secondary mb-4">per visit</p>
-                    <a href="contact.html" class="btn btn-outline w-full">Reserve</a>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn btn-outline w-full justify-center">Reserve</a>
+                    </div>
                 </div>
 
-                <div class="card reveal text-center">
-                    <div
-                        class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                        <span class="text-white text-6xl">📦</span>
+                <div class="card reveal flex flex-col text-center h-full border-2 border-primary">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwePryDX1M0cBgiXVf6u7j0_MvjqQMCkpRg&s"
+                        alt="Full Package" class="rounded-lg mb-6 h-48 w-full object-cover">
+                    <div class="flex-grow">
+                        <h3 class="card-title mb-2">Full Package</h3>
+                        <p class="text-secondary mb-4">Shoes, harness, and chalk bag bundle</p>
+                        <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$10</div>
+                        <p class="text-sm text-secondary mb-6">per visit</p>
                     </div>
-                    <h3 class="card-title">Full Package</h3>
-                    <p class="text-secondary mb-4">Shoes, harness, and chalk bag bundle</p>
-                    <div class="text-3xl font-bold mb-2" style="color: var(--primary);">$10</div>
-                    <p class="text-sm text-secondary mb-4">per visit</p>
-                    <a href="contact.html" class="btn btn-primary w-full">Reserve</a>
+                    <div class="mt-auto">
+                        <a href="contact.html" class="btn btn-primary w-full justify-center">Reserve<i
+                                class="fas fa-calendar-check ms-2"></i></a>
+                    </div>
                 </div>
             </div>
 
             <div class="text-center mt-8">
-                <p class="text-secondary">💡 <strong>Members get free rentals!</strong> <a href="memberships.html"
-                        class="text-primary">Learn more about memberships</a></p>
+                <p class="text-secondary"><i class="fas fa-lightbulb me-2 text-yellow-400"></i><strong>Members get free
+                        rentals!</strong> <a href="memberships.html" class="text-primary">Learn more about
+                        memberships</a></p>
             </div>
         </div>
     </section>
@@ -145,145 +157,174 @@
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Featured Products</h2>
+                <h2 class="reveal"><i class="fas fa-tag me-2"></i>Featured Products</h2>
                 <p class="text-lg text-secondary reveal">Top-quality gear from leading brands</p>
             </div>
 
             <!-- Climbing Shoes -->
             <div class="mb-16">
-                <h3 class="mb-8 reveal">Climbing Shoes</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-shoe-prints me-2"></i>Climbing Shoes</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-red-400 to-red-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">👟</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="La Sportiva Tarantulace" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">La Sportiva Tarantulace</h4>
+                            <p class="text-secondary mb-4">Perfect beginner shoe with comfort and performance</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$89.95</div>
                         </div>
-                        <h4 class="card-title">La Sportiva Tarantulace</h4>
-                        <p class="text-secondary mb-4">Perfect beginner shoe with comfort and performance</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$89.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire<i
+                                    class="fas fa-info-circle ms-2"></i></a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">👟</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYQh5NJ_fHxsVP82snuWOr71FKNpqhjiSauQ&s"
+                            alt="Scarpa Instinct VS" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Scarpa Instinct VS</h4>
+                            <p class="text-secondary mb-4">High-performance shoe for advanced climbers</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$189.95</div>
                         </div>
-                        <h4 class="card-title">Scarpa Instinct VS</h4>
-                        <p class="text-secondary mb-4">High-performance shoe for advanced climbers</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$189.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire<i
+                                    class="fas fa-info-circle ms-2"></i></a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">👟</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh-TCJw6KufgWFqTR0ENeYAViv43zQK6HY_w&s"
+                            alt="Five Ten Anasazi" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Five Ten Anasazi</h4>
+                            <p class="text-secondary mb-4">Versatile all-around climbing shoe</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$139.95</div>
                         </div>
-                        <h4 class="card-title">Five Ten Anasazi</h4>
-                        <p class="text-secondary mb-4">Versatile all-around climbing shoe</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$139.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire<i
+                                    class="fas fa-info-circle ms-2"></i></a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">👟</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://climbsmartshop.com/cdn/shop/products/shamann.png?v=1587415136"
+                            alt="Evolv Shaman" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Evolv Shaman</h4>
+                            <p class="text-secondary mb-4">Aggressive shoe for steep terrain</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$169.95</div>
                         </div>
-                        <h4 class="card-title">Evolv Shaman</h4>
-                        <p class="text-secondary mb-4">Aggressive shoe for steep terrain</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$169.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire<i
+                                    class="fas fa-info-circle ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Harnesses -->
             <div class="mb-16">
-                <h3 class="mb-8 reveal">Harnesses</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-vest me-2"></i>Harnesses</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🎒</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRme0SHvt0s-ngmoikTqySpTq65WTmGe2TQHQ&s"
+                            alt="Black Diamond Momentum" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Black Diamond Momentum</h4>
+                            <p class="text-secondary mb-4">Comfortable all-around harness</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$59.95</div>
                         </div>
-                        <h4 class="card-title">Black Diamond Momentum</h4>
-                        <p class="text-secondary mb-4">Comfortable all-around harness</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$59.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire<i
+                                    class="fas fa-info-circle ms-2"></i></a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🎒</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=400&h=400&auto=format&fit=crop"
+                            alt="Petzl Aquila" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Petzl Aquila</h4>
+                            <p class="text-secondary mb-4">Lightweight performance harness</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$79.95</div>
                         </div>
-                        <h4 class="card-title">Petzl Aquila</h4>
-                        <p class="text-secondary mb-4">Lightweight performance harness</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$79.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire<i
+                                    class="fas fa-info-circle ms-2"></i></a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🎒</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?q=80&w=400&h=400&auto=format&fit=crop"
+                            alt="Arc'teryx AR-395a" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Arc'teryx AR-395a</h4>
+                            <p class="text-secondary mb-4">Premium alpine harness</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$119.95</div>
                         </div>
-                        <h4 class="card-title">Arc'teryx AR-395a</h4>
-                        <p class="text-secondary mb-4">Premium alpine harness</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$119.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire<i
+                                    class="fas fa-info-circle ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Accessories -->
             <div>
-                <h3 class="mb-8 reveal">Accessories & Apparel</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-tshirt me-2"></i>Accessories & Apparel</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">⚪</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://m.media-amazon.com/images/I/81eBWd1nUTL.jpg" alt="Premium Chalk"
+                            class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Premium Chalk</h4>
+                            <p class="text-secondary mb-4">High-quality climbing chalk</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$12.95</div>
                         </div>
-                        <h4 class="card-title">Premium Chalk</h4>
-                        <p class="text-secondary mb-4">High-quality climbing chalk</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$12.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire</a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🎒</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanCt7JJNpNiasgRIIzxthbRLkgeVuPKBaVg&s"
+                            alt="Chalk Bags" class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Chalk Bags</h4>
+                            <p class="text-secondary mb-4">Various styles and colors</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$19.95</div>
                         </div>
-                        <h4 class="card-title">Chalk Bags</h4>
-                        <p class="text-secondary mb-4">Various styles and colors</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$19.95</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire</a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">👕</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTihkx_cBQs_BABYmjUVuhUdx-qCx0J9qAgFg&s"
+                            alt="Summit Climb " class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Summit Climb Apparel</h4>
+                            <p class="text-secondary mb-4">T-shirts, hoodies, and more</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$24.95+</div>
                         </div>
-                        <h4 class="card-title">Summit Climb Apparel</h4>
-                        <p class="text-secondary mb-4">T-shirts, hoodies, and more</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$24.95+</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire</a>
+                        </div>
                     </div>
 
-                    <div class="card reveal">
-                        <div
-                            class="bg-gradient-to-br from-lime-400 to-lime-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🧤</span>
+                    <div class="card reveal flex flex-col text-center h-full">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=400&h=400&auto=format&fit=crop"
+                            alt="Training " class="rounded-lg mb-6 h-48 w-full object-cover">
+                        <div class="flex-grow">
+                            <h4 class="card-title mb-2">Training Accessories</h4>
+                            <p class="text-secondary mb-4">Finger trainers, resistance bands</p>
+                            <div class="text-2xl font-bold mb-6" style="color: var(--primary);">$29.95+</div>
                         </div>
-                        <h4 class="card-title">Training Accessories</h4>
-                        <p class="text-secondary mb-4">Finger trainers, resistance bands</p>
-                        <div class="text-2xl font-bold mb-4" style="color: var(--primary);">$29.95+</div>
-                        <a href="contact.html" class="btn btn-primary w-full">Inquire</a>
+                        <div class="mt-auto">
+                            <a href="contact.html" class="btn btn-primary w-full justify-center">Inquire</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,11 +337,13 @@
             <div class="card reveal text-center"
                 style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);">
                 <div class="p-8">
-                    <h2 class="mb-4" style="color: white;">Member Exclusive Benefits</h2>
+                    <h2 class="mb-4" style="color: white;"><i class="fas fa-gift me-2"></i>Member Exclusive Benefits
+                    </h2>
                     <p class="text-xl mb-6" style="color: rgba(255, 255, 255, 0.95);">Members receive 15% off all pro
                         shop purchases and free equipment rentals!</p>
                     <a href="memberships.html" class="btn btn-lg"
-                        style="background-color: white; color: var(--primary);">Become a Member</a>
+                        style="background-color: white; color: var(--primary);">Become a Member<i
+                            class="fas fa-crown ms-2"></i></a>
                 </div>
             </div>
         </div>
@@ -309,12 +352,14 @@
     <!-- CTA Section -->
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container text-center">
-            <h2 class="reveal">Need Help Choosing?</h2>
+            <h2 class="reveal"><i class="fas fa-question-circle me-2"></i>Need Help Choosing?</h2>
             <p class="text-xl mb-8 reveal text-secondary">Our expert staff can help you find the perfect gear for your
                 climbing style</p>
             <div class="flex gap-4 justify-center flex-wrap reveal">
-                <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
-                <a href="index.html" class="btn btn-outline btn-lg">Visit the Gym</a>
+                <a href="contact.html" class="btn btn-primary btn-lg">Contact Us<i
+                        class="fas fa-paper-plane ms-2"></i></a>
+                <a href="index.html" class="btn btn-outline btn-lg">Visit the Gym<i
+                        class="fas fa-map-marker-alt ms-2"></i></a>
             </div>
         </div>
     </section>
@@ -331,10 +376,10 @@
                     <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
                         adventure.</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 

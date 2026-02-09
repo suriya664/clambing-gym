@@ -43,6 +43,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -59,13 +60,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="home-v2.html" class="active">Home 2</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
-                <li><a href="classes.html">Classes</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm navbar-btn"><i
+                            class="fas fa-user-plus me-2"></i>Join
+                        Now</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
@@ -82,8 +83,8 @@
     </nav>
 
     <!-- Hero Section - Alternative Design -->
-    <section class="section"
-        style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); min-height: 90vh; display: flex; align-items: center;">
+    <section class="section nav-clearance"
+        style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); min-height: 85vh; display: flex; align-items: center; padding: 6rem 0;">
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="reveal">
@@ -92,11 +93,13 @@
                     <p class="text-xl mb-8" style="color: rgba(255, 255, 255, 0.95);">Experience the thrill of climbing
                         in a safe, supportive environment. Whether you're a complete beginner or seasoned climber, we
                         have everything you need to reach new heights.</p>
-                    <div class="flex gap-4 flex-wrap">
-                        <a href="signup.html" class="btn btn-lg"
-                            style="background-color: white; color: var(--primary);">Start Free Trial</a>
+                    <div class="flex justify-center">
+                        <a href="signup.html" class="btn btn-lg mr-4"
+                            style="background-color: white; color: var(--primary); border-color: white;">Start Free
+                            Trial<i class="fas fa-bolt ms-2"></i></a>
                         <a href="#features" class="btn btn-outline btn-lg"
-                            style="color: white; border-color: white;">Learn More</a>
+                            style="color: white; border-color: white;">Learn More<i
+                                class="fas fa-info-circle ms-2"></i></a>
                     </div>
                     <div class="grid grid-cols-3 gap-6 mt-12">
                         <div class="text-center">
@@ -124,46 +127,143 @@
     <section id="features" class="section">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Everything You Need to Climb</h2>
+                <h2 class="reveal"><i class="fas fa-star me-2"></i>Everything You Need to Climb</h2>
                 <p class="text-lg text-secondary reveal">Premium facilities and expert support for climbers of all
                     levels</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card reveal text-center">
-                    <div class="text-5xl mb-4">🧗‍♀️</div>
-                    <h3 class="card-title">Multiple Climbing Styles</h3>
-                    <p class="text-secondary">Bouldering, top-rope, and lead climbing all under one roof</p>
+            <!-- Bouldering Area -->
+            <div class="mb-24">
+                <div class="text-center mb-12">
+                    <h2 class="reveal mx-auto flex items-center justify-center"><i
+                            class="fas fa-mountain me-3"></i>Bouldering Area</h2>
+                    <p class="text-xl text-secondary reveal mx-auto max-w-2xl mt-4">Our expansive bouldering area
+                        features walls up to 15 feet high with premium crash pads throughout. With over 60 problems
+                        ranging from V0 to V10, there's something for every skill level.</p>
                 </div>
-
-                <div class="card reveal text-center">
-                    <div class="text-5xl mb-4">👨‍🏫</div>
-                    <h3 class="card-title">Expert Coaching</h3>
-                    <p class="text-secondary">Certified instructors to help you progress safely and effectively</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="reveal order-2 lg:order-1">
+                        <img src="https://images.unsplash.com/photo-1516900441533-219372f88373?auto=format&fit=crop&q=80&w=1200"
+                            alt="Bouldering Area" class="rounded-xl shadow-2xl w-full h-96 object-cover text-center">
+                    </div>
+                    <div class="reveal order-1 lg:order-2">
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-primary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">15-foot walls with varied angles and features</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-primary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Premium crash pads for safe landings</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-primary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Overhangs, slabs, and vertical terrain</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-primary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Color-coded routes for easy identification</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-primary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Dedicated warm-up and beginner zones</span>
+                            </li>
+                        </ul>
+                        <div class="text-center lg:text-left">
+                            <a href="facilities.html#bouldering" class="btn btn-primary btn-lg justify-center">Start
+                                Bouldering<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="card reveal text-center">
-                    <div class="text-5xl mb-4">🔄</div>
-                    <h3 class="card-title">Weekly Route Setting</h3>
-                    <p class="text-secondary">Fresh challenges every week to keep your climbing exciting</p>
+            <!-- Top-Rope & Lead Climbing -->
+            <div class="mb-24">
+                <div class="text-center mb-12">
+                    <h2 class="reveal mx-auto flex items-center justify-center"><i
+                            class="fas fa-layer-group me-3"></i>Top-Rope & Lead Climbing</h2>
+                    <p class="text-xl text-secondary reveal mx-auto max-w-2xl mt-4">Experience the thrill of height on
+                        our 45-foot climbing walls. Whether you're learning to top-rope or pushing your limits on lead,
+                        we have the perfect terrain.</p>
                 </div>
-
-                <div class="card reveal text-center">
-                    <div class="text-5xl mb-4">🏋️</div>
-                    <h3 class="card-title">Training Area</h3>
-                    <p class="text-secondary">Dedicated space with campus boards, hangboards, and weights</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="reveal">
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-secondary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">45-foot walls with auto-belays and rope stations</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-secondary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">40+ top-rope and lead routes (5.6 to 5.13)</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-secondary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Multiple auto-belay stations for solo climbing</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-secondary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Lead climbing with quickdraws provided</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-secondary text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Varied terrain including cracks, aretes, and faces</span>
+                            </li>
+                        </ul>
+                        <div class="text-center lg:text-left">
+                            <a href="facilities.html#ropes" class="btn btn-secondary btn-lg justify-center">Start Rope
+                                Climbing<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&q=80&w=1200"
+                            alt="Top-Rope Climbing" class="rounded-xl shadow-2xl w-full h-96 object-cover text-center">
+                    </div>
                 </div>
+            </div>
 
-                <div class="card reveal text-center">
-                    <div class="text-5xl mb-4">☕</div>
-                    <h3 class="card-title">Café & Lounge</h3>
-                    <p class="text-secondary">Relax and refuel in our comfortable lounge area</p>
+            <!-- Training Zone -->
+            <div class="mb-12">
+                <div class="text-center mb-12">
+                    <h2 class="reveal mx-auto flex items-center justify-center"><i
+                            class="fas fa-dumbbell me-3"></i>Training Zone</h2>
+                    <p class="text-xl text-secondary reveal mx-auto max-w-2xl mt-4">Take your climbing to the next level
+                        with our dedicated training area equipped with professional-grade equipment for strength and
+                        technique development.</p>
                 </div>
-
-                <div class="card reveal text-center">
-                    <div class="text-5xl mb-4">🎉</div>
-                    <h3 class="card-title">Community Events</h3>
-                    <p class="text-secondary">Regular competitions, socials, and outdoor trips</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="reveal order-2 lg:order-1">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200"
+                            alt="Training Zone" class="rounded-xl shadow-2xl w-full h-96 object-cover text-center">
+                    </div>
+                    <div class="reveal order-1 lg:order-2">
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-accent text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Campus boards for power development</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-accent text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Multiple hangboards for finger strength</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-accent text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">System wall for technique training</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-accent text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Free weights and resistance equipment</span>
+                            </li>
+                            <li class="flex items-center gap-3 justify-center lg:justify-start">
+                                <span class="text-accent text-xl"><i class="fas fa-check-circle"></i></span>
+                                <span class="text-secondary">Yoga mats and stretching area</span>
+                            </li>
+                        </ul>
+                        <div class="text-center lg:text-left">
+                            <a href="classes.html#training" class="btn btn-accent btn-lg justify-center">Training
+                                Classes<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,79 +273,159 @@
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Flexible Membership Options</h2>
+                <h2 class="reveal"><i class="fas fa-tags me-2"></i>Flexible Membership Options</h2>
                 <p class="text-lg text-secondary reveal">Choose the plan that fits your climbing goals</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card reveal">
-                    <h3 class="card-title">Day Pass</h3>
-                    <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$25</div>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Full day access</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">All climbing areas</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Equipment rental available</span>
-                        </li>
-                    </ul>
-                    <a href="memberships.html" class="btn btn-outline w-full">Learn More</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+                <!-- Day Pass Card -->
+                <div class="card reveal flex flex-col text-center">
+                    <div class="card-header">
+                        <div class="text-4xl mb-4 text-primary mx-auto"><i class="fas fa-ticket-alt"></i></div>
+                        <h3 class="card-title">Day Pass</h3>
+                        <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$25</div>
+                        <p class="text-secondary text-sm">Per visit</p>
+                    </div>
+                    <div class="card-body flex-grow">
+                        <ul class="space-y-3 mb-6 text-center">
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Full day access</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Equipment rental available</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="login.html" class="btn btn-outline w-full justify-center">Learn More<i
+                                class="fas fa-info-circle ms-2"></i></a>
+                    </div>
                 </div>
 
-                <div class="card reveal" style="border: 2px solid var(--primary);">
-                    <div class="inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3"
-                        style="background-color: var(--primary); color: white;">Most Popular</div>
-                    <h3 class="card-title">Monthly</h3>
-                    <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$89</div>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Unlimited access</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Free gear rental</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Guest passes</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Class discounts</span>
-                        </li>
-                    </ul>
-                    <a href="signup.html" class="btn btn-primary w-full">Get Started</a>
+                <!-- Student Discount Card -->
+                <div class="card reveal flex flex-col text-center">
+                    <div class="card-header">
+                        <div class="text-4xl mb-4 text-secondary mx-auto"><i class="fas fa-user-graduate"></i></div>
+                        <h3 class="card-title">Student</h3>
+                        <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$69</div>
+                        <p class="text-secondary text-sm">Per month (with valid student ID)</p>
+                    </div>
+                    <div class="card-body flex-grow">
+                        <ul class="space-y-3 mb-6 text-center">
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">All monthly membership benefits</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Valid student ID required</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Perfect for college students</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Study lounge access</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="signup.html" class="btn btn-outline w-full justify-center">Get Student Plan<i
+                                class="fas fa-graduation-cap ms-2"></i></a>
+                    </div>
                 </div>
 
-                <div class="card reveal">
-                    <h3 class="card-title">Annual</h3>
-                    <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$799</div>
-                    <ul class="space-y-3 mb-6">
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Save $269/year</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">All monthly benefits</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Priority class booking</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-primary">✓</span>
-                            <span class="text-secondary">Exclusive events</span>
-                        </li>
-                    </ul>
-                    <a href="memberships.html" class="btn btn-outline w-full">Learn More</a>
+                <!-- Monthly Card -->
+                <div class="card reveal flex flex-col text-center" style="border: 2px solid var(--primary);">
+                    <div
+                        style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background-color: var(--primary); color: white; padding: 4px 16px; border-radius: 12px; font-size: 0.875rem; font-weight: 600; white-space: nowrap;">
+                        MOST POPULAR
+                    </div>
+                    <div class="card-header">
+                        <div class="text-4xl mb-4 text-primary mx-auto"><i class="fas fa-calendar-check"></i></div>
+                        <h3 class="card-title">Monthly</h3>
+                        <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$89</div>
+                        <p class="text-secondary text-sm">Per month</p>
+                    </div>
+                    <div class="card-body flex-grow">
+                        <ul class="space-y-3 mb-6 text-center">
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Guest passes (2/mo)</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Class discounts</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="signup.html" class="btn btn-primary w-full justify-center">Start Bouldering<i
+                                class="fas fa-mountain ms-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Family Plan Card -->
+                <div class="card reveal flex flex-col text-center">
+                    <div class="card-header">
+                        <div class="text-4xl mb-4 text-accent mx-auto"><i class="fas fa-users"></i></div>
+                        <h3 class="card-title">Family Plan</h3>
+                        <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$199</div>
+                        <p class="text-secondary text-sm">Per month (up to 4 members)</p>
+                    </div>
+                    <div class="card-body flex-grow">
+                        <ul class="space-y-3 mb-6 text-center">
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Unlimited access for whole family</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Youth program discounts</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Family locker included</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Birthday party discounts</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="signup.html" class="btn btn-outline w-full justify-center">Get Family Plan<i
+                                class="fas fa-home ms-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Annual Card -->
+                <div class="card reveal flex flex-col text-center">
+                    <div class="card-header">
+                        <div class="text-4xl mb-4 text-secondary mx-auto"><i class="fas fa-crown"></i></div>
+                        <h3 class="card-title">Annual</h3>
+                        <div class="text-4xl font-bold mb-4" style="color: var(--primary);">$799</div>
+                        <p class="text-secondary text-sm">Best value</p>
+                    </div>
+                    <div class="card-body flex-grow">
+                        <ul class="space-y-3 mb-6 text-center">
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Save $269/year</span>
+                            </li>
+                            <li class="flex items-start justify-center gap-2">
+                                <span class="text-primary">✓</span>
+                                <span class="text-secondary">Free gear rental</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="login.html" class="btn btn-outline w-full justify-center">Learn More<i
+                                class="fas fa-info-circle ms-2"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -254,123 +434,122 @@
     <!-- Success Stories -->
     <section class="section">
         <div class="container">
-            <div class="text-center mb-12">
-                <h2 class="reveal">Success Stories</h2>
-                <p class="text-lg text-secondary reveal">Real transformations from our community</p>
-            </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="card reveal">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div
-                            class="w-16 h-16 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white font-bold text-2xl">
-                            J
-                        </div>
+                <div class="card reveal text-center">
+                    <div class="flex flex-col items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400&h=400"
+                            alt="Jessica Martinez"
+                            class="w-24 h-24 rounded-full object-cover shadow-lg mb-4 text-center">
                         <div>
                             <h4 class="font-semibold text-lg">Jessica Martinez</h4>
                             <p class="text-sm text-secondary">Member for 1 year</p>
                         </div>
                     </div>
-                    <p class="text-secondary mb-4">"I started as a complete beginner and was intimidated at first. The
+                    <div class="text-primary mb-4 justify-center flex">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-secondary mb-6">"I started as a complete beginner and was intimidated at first. The
                         staff made me feel so welcome, and now I'm climbing V4s! I've lost 20 pounds, made amazing
                         friends, and found a new passion. Summit Climb changed my life."</p>
-                    <div class="text-primary">⭐⭐⭐⭐⭐</div>
                 </div>
 
-                <div class="card reveal">
-                    <div class="flex items-center gap-4 mb-4">
-                        <div
-                            class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white font-bold text-2xl">
-                            D
-                        </div>
+                <div class="card reveal text-center">
+                    <div class="flex flex-col items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&q=80&w=400&h=400"
+                            alt="David Park" class="w-24 h-24 rounded-full object-cover shadow-lg mb-4 text-center">
                         <div>
                             <h4 class="font-semibold text-lg">David Park</h4>
                             <p class="text-sm text-secondary">Member for 6 months</p>
                         </div>
                     </div>
-                    <p class="text-secondary mb-4">"As someone who gets bored with traditional gyms, climbing has been a
+                    <div class="text-primary mb-4 justify-center flex">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-secondary mb-6">"As someone who gets bored with traditional gyms, climbing has been a
                         game-changer. Every session is different, and I'm constantly challenged. The community here is
                         incredibly supportive and motivating."</p>
-                    <div class="text-primary">⭐⭐⭐⭐⭐</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
+    <!-- Amenities Section -->
+    <section class="section" style="background-color: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="reveal mx-auto mb-4"><i class="fas fa-concierge-bell me-3"></i>Amenities & Services</h2>
+                <p class="text-xl text-secondary reveal mx-auto max-w-2xl">Everything you need for a comfortable visit
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card reveal text-center p-8">
+                    <div class="text-5xl mb-6 text-primary mx-auto"><i class="fas fa-coffee"></i></div>
+                    <h3 class="card-title mb-4">Café & Lounge</h3>
+                    <p class="text-secondary">Relax with coffee, smoothies, and healthy snacks in our comfortable lounge
+                        area.</p>
+                </div>
+
+                <div class="card reveal text-center p-8">
+                    <div class="text-5xl mb-6 text-secondary mx-auto"><i class="fas fa-shower"></i></div>
+                    <h3 class="card-title mb-4">Locker Rooms</h3>
+                    <p class="text-secondary">Clean, spacious locker rooms with showers and secure storage for your
+                        belongings.</p>
+                </div>
+
+                <div class="card reveal text-center p-8">
+                    <div class="text-5xl mb-6 text-accent mx-auto"><i class="fas fa-tools"></i></div>
+                    <h3 class="card-title mb-4">Gear Rental</h3>
+                    <p class="text-secondary">Full range of climbing shoes, harnesses, and chalk bags available for
+                        rent.</p>
+                </div>
+
+                <div class="card reveal text-center p-8">
+                    <div class="text-5xl mb-6 text-primary mx-auto"><i class="fas fa-parking"></i></div>
+                    <h3 class="card-title mb-4">Free Parking</h3>
+                    <p class="text-secondary">Ample free parking right outside the facility for all members and guests.
+                    </p>
+                </div>
+
+                <div class="card reveal text-center p-8">
+                    <div class="text-5xl mb-6 text-secondary mx-auto"><i class="fas fa-wifi"></i></div>
+                    <h3 class="card-title mb-4">Free WiFi</h3>
+                    <p class="text-secondary">Stay connected with complimentary high-speed WiFi throughout the facility.
+                    </p>
+                </div>
+
+                <div class="card reveal text-center p-8">
+                    <div class="text-5xl mb-6 text-accent mx-auto"><i class="fas fa-shopping-bag"></i></div>
+                    <h3 class="card-title mb-4">Pro Shop</h3>
+                    <p class="text-secondary">Purchase climbing gear, apparel, and accessories from top brands locally.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Banner -->
     <section class="section" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);">
         <div class="container text-center">
-            <h2 class="reveal" style="color: white;">Try Your First Class Free</h2>
-            <p class="text-xl mb-8 reveal" style="color: rgba(255, 255, 255, 0.95);">Experience what makes Summit Climb
-                special with a complimentary beginner class</p>
-            <div class="flex gap-4 justify-center flex-wrap reveal">
-                <a href="signup.html" class="btn btn-lg" style="background-color: white; color: var(--primary);">Claim
-                    Free Class</a>
-                <a href="contact.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Ask
-                    Questions</a>
+            <h2 class="reveal text-center mx-auto mb-6" style="color: white; max-width: 700px;">Ready to Start Your
+                Climbing Journey?</h2>
+            <div class="reveal mb-10 mx-auto max-w-3xl overflow-hidden rounded-2xl shadow-2xl">
+                <img src="./images/hero-bg.png" alt="Summit Climb Gym" class="w-full h-auto">
+            </div>
+            <p class="text-xl mb-10 reveal mx-auto max-w-2xl" style="color: rgba(255, 255, 255, 0.95);">Join Summit
+                Climb today and get
+                your first class free! Experience what makes us the premier climbing community.</p>
+            <div class="flex gap-6 justify-center flex-wrap reveal">
+                <a href="signup.html" class="btn btn-lg justify-center px-12"
+                    style="background-color: white; color: var(--primary);">Join Now<i
+                        class="fas fa-user-plus ms-2"></i></a>
+                <a href="contact.html" class="btn btn-outline btn-lg justify-center px-12"
+                    style="color: white; border-color: white;">Contact Us<i class="fas fa-paper-plane ms-2"></i></a>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <a href="index.html" class="footer-logo">
-                        <img src="./favicon.png" alt="Summit Climb Logo">
-                        <span class="brand-name">Summit Climb</span>
-                    </a>
-                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
-                        adventure.</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="memberships.html">Memberships</a></li>
-                        <li><a href="classes.html">Classes</a></li>
-                        <li><a href="schedule.html">Schedule</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Facilities</h4>
-                    <ul class="footer-links">
-                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
-                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
-                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
-                        <li><a href="facilities.html#training">Training Zone</a></li>
-                        <li><a href="shop.html">Shop & Rentals</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
-                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
-                        <li><a href="waiver.html">Waiver & Liability</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
-                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
-            </div>
-        </div>
-    </footer>
 
     <!-- JavaScript -->
     <script src="./script.js"></script>

@@ -44,6 +44,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 
     <!-- Structured Data -->
@@ -94,13 +95,13 @@
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="home-v2.html">Home 2</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
-                <li><a href="classes.html">Classes</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm navbar-btn"><i
+                            class="fas fa-user-plus me-2"></i>Join
+                        Now</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
@@ -119,12 +120,12 @@
     <!-- Hero Section -->
     <section class="hero" style="background-image: url('./images/hero-bg.png');">
         <div class="hero-content">
-            <h1 class="fade-in">Climb Higher. Get Stronger. Have Fun.</h1>
+            <h1 class="fade-in"><i class="fas fa-mountain me-3"></i>Climb Higher. Get Stronger. Have Fun.</h1>
             <p class="fade-in">Indoor bouldering, top-rope & lead climbing for all levels</p>
             <div class="hero-cta fade-in">
-                <a href="login.html" class="btn btn-primary btn-lg">Join Now</a>
+                <a href="login.html" class="btn btn-primary btn-lg">Join Now<i class="fas fa-arrow-right ms-2"></i></a>
                 <a href="classes.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Book a
-                    Class</a>
+                    Class<i class="fas fa-calendar-alt ms-2"></i></a>
             </div>
         </div>
     </section>
@@ -144,7 +145,7 @@
                     <p class="text-secondary">Industry-leading safety standards and equipment</p>
                 </div>
                 <div class="reveal">
-                    <div class="text-5xl mb-3">⭐</div>
+                    <div class="text-5xl mb-3 text-yellow-400"><i class="fas fa-star"></i></div>
                     <h3 class="text-xl font-semibold mb-2">Community Rated</h3>
                     <p class="text-secondary">4.9/5 stars from over 2,000 members</p>
                 </div>
@@ -156,14 +157,14 @@
     <section class="section">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Why Choose Summit Climb?</h2>
+                <h2 class="reveal"><i class="fas fa-star me-2"></i>Why Choose Summit Climb?</h2>
                 <p class="text-lg text-secondary reveal">Experience the perfect blend of fitness, skill, and community
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="card reveal">
-                    <div class="text-4xl mb-4">💪</div>
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-dumbbell"></i></div>
                     <h3 class="card-title">Full Body Fitness</h3>
                     <p class="text-secondary mb-4">Build strength, endurance, and flexibility while having fun</p>
                     <div class="card-footer">
@@ -181,8 +182,8 @@
                 </div>
 
                 <div class="card reveal">
-                    <div class="text-4xl mb-4">👥</div>
-                    <h3 class="card-title">Vibrant Community</h3>
+                    <div class="text-4xl mb-4 text-primary"><i class="fas fa-users"></i></div>
+                    <h3 class="card-title">Vibrant </h3>
                     <p class="text-secondary mb-4">Join a supportive network of passionate climbers</p>
                     <div class="card-footer">
                         <a href="events.html" class="btn btn-outline btn-sm">Join Events</a>
@@ -205,7 +206,7 @@
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">World-Class Facilities</h2>
+                <h2 class="reveal"><i class="fas fa-building me-2"></i>World-Class Facilities</h2>
                 <p class="text-lg text-secondary reveal">State-of-the-art climbing walls and training areas</p>
             </div>
 
@@ -213,12 +214,33 @@
                 <div class="reveal">
                     <img src="./images/bouldering.png" alt="Bouldering Area" class="rounded-lg shadow-lg w-full">
                 </div>
-                <div class="reveal">
+                <div class="reveal text-center">
                     <h3 class="mb-4">Premium Climbing Experience</h3>
-                    <p class="text-secondary mb-4">Our 15,000 sq ft facility features over 100 climbing routes, from
+                    <p class="text-secondary mb-6">Our 15,000 sq ft facility features over 100 climbing routes, from
                         beginner-friendly walls to challenging overhangs. With routes reset weekly, you'll always find
                         new challenges to conquer.</p>
-                    <ul class="space-y-3 mb-6">
+
+                    <!-- Statistics -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-1">15K</div>
+                            <div class="text-sm text-secondary">Sq Ft Facility</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-1">100+</div>
+                            <div class="text-sm text-secondary">Climbing Routes</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-1">45ft</div>
+                            <div class="text-sm text-secondary">Max Wall Height</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary mb-1">Weekly</div>
+                            <div class="text-sm text-secondary">Route Resets</div>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 text-left max-w-md mx-auto">
                         <li class="flex items-start gap-3">
                             <span class="text-primary text-xl">✓</span>
                             <span class="text-secondary">Bouldering walls up to 15 feet with premium crash pads</span>
@@ -236,8 +258,19 @@
                             <span class="text-primary text-xl">✓</span>
                             <span class="text-secondary">Comfortable lounge and café for post-climb relaxation</span>
                         </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Professional gear shop and equipment rentals</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-primary text-xl">✓</span>
+                            <span class="text-secondary">Climate-controlled environment for year-round comfort</span>
+                        </li>
                     </ul>
-                    <a href="facilities.html" class="btn btn-primary">Tour Our Facilities</a>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="facilities.html" class="btn btn-primary">Tour Our Facilities</a>
+                        <a href="memberships.html" class="btn btn-outline">View Membership Plans</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -247,7 +280,7 @@
     <section class="section">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Featured Classes</h2>
+                <h2 class="reveal"><i class="fas fa-graduation-cap me-2"></i>Featured Classes</h2>
                 <p class="text-lg text-secondary reveal">Expert-led instruction for climbers of all levels</p>
             </div>
 
@@ -259,8 +292,8 @@
                     <p class="text-secondary mb-4">Perfect for first-timers. Learn basic techniques, safety, and build
                         confidence on the wall.</p>
                     <div class="flex items-center justify-between mb-4 text-sm text-secondary">
-                        <span>📅 Mon, Wed, Fri</span>
-                        <span>⏱️ 90 min</span>
+                        <span><i class="fas fa-calendar-alt me-2"></i>Mon, Wed, Fri</span>
+                        <span><i class="fas fa-clock me-2"></i>90 min</span>
                     </div>
                     <div class="card-footer">
                         <a href="classes.html" class="btn btn-primary w-full" data-booking="Beginner Fundamentals">Book
@@ -269,16 +302,14 @@
                 </div>
 
                 <div class="card reveal">
-                    <div
-                        class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                        <span class="text-white text-6xl">🧗</span>
-                    </div>
+                    <img src="https://images.squarespace-cdn.com/content/v1/566b9a002399a3bdabaf6fa5/00e933cb-f94f-4c99-8b48-dd404674f9e7/Allhiitclassphotos-6.jpg"
+                        alt="Advanced Technique Class" class="rounded-lg mb-4 w-full h-48 object-cover">
                     <h3 class="card-title">Advanced Technique</h3>
                     <p class="text-secondary mb-4">Refine your skills with advanced footwork, dynamic moves, and route
                         reading strategies.</p>
                     <div class="flex items-center justify-between mb-4 text-sm text-secondary">
-                        <span>📅 Tue, Thu</span>
-                        <span>⏱️ 2 hours</span>
+                        <span><i class="fas fa-calendar-alt me-2"></i>Tue, Thu</span>
+                        <span><i class="fas fa-clock me-2"></i>2 hours</span>
                     </div>
                     <div class="card-footer">
                         <a href="classes.html" class="btn btn-primary w-full" data-booking="Advanced Technique">Book
@@ -287,16 +318,15 @@
                 </div>
 
                 <div class="card reveal">
-                    <div
-                        class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                        <span class="text-white text-6xl">👨‍👩‍👧‍👦</span>
-                    </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw111XkebSQsVPIya3BQFIQTk7YjCZbebbqg&sUSE"
+                        alt="Youth Programs Class" class="rounded-lg mb-4 w-full h-48 object-cover">
                     <h3 class="card-title">Youth Programs</h3>
-                    <p class="text-secondary mb-4">Fun and safe climbing for kids ages 6-16. Build strength, confidence,
+                    <p class="text-secondary mb-4">Fun and safe climbing for kids ages 6-16. Build
+                        strength,confidence,will power
                         and friendships.</p>
                     <div class="flex items-center justify-between mb-4 text-sm text-secondary">
-                        <span>📅 Sat, Sun</span>
-                        <span>⏱️ 60 min</span>
+                        <span><i class="fas fa-calendar-alt me-2"></i>Sat, Sun</span>
+                        <span><i class="fas fa-clock me-2"></i>60 min</span>
                     </div>
                     <div class="card-footer">
                         <a href="classes.html" class="btn btn-primary w-full" data-booking="Youth Programs">Book
@@ -315,7 +345,7 @@
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">What Our Members Say</h2>
+                <h2 class="reveal"><i class="fas fa-comment-dots me-2"></i>What Our Members Say</h2>
                 <p class="text-lg text-secondary reveal">Join thousands of satisfied climbers</p>
             </div>
 
@@ -328,7 +358,10 @@
                         </div>
                         <div>
                             <h4 class="font-semibold">Sarah Johnson</h4>
-                            <div class="text-primary text-sm">⭐⭐⭐⭐⭐</div>
+                            <div class="text-primary text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <p class="text-secondary">"Best climbing gym I've ever been to! The staff is incredibly friendly and
@@ -343,7 +376,10 @@
                         </div>
                         <div>
                             <h4 class="font-semibold">Mike Chen</h4>
-                            <div class="text-primary text-sm">⭐⭐⭐⭐⭐</div>
+                            <div class="text-primary text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <p class="text-secondary">"The community here is amazing. I've made so many friends and the
@@ -358,7 +394,10 @@
                         </div>
                         <div>
                             <h4 class="font-semibold">Emily Rodriguez</h4>
-                            <div class="text-primary text-sm">⭐⭐⭐⭐⭐</div>
+                            <div class="text-primary text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                     <p class="text-secondary">"I was nervous as a beginner, but the intro class made me feel so
@@ -379,8 +418,7 @@
             <p class="text-lg mb-8 reveal" style="color: rgba(255, 255, 255, 0.95);">Join Summit Climb today and get
                 your first class free!</p>
             <div class="flex gap-4 justify-center flex-wrap reveal">
-                <a href="memberships.html" class="btn btn-lg"
-                    style="background-color: white; color: var(--primary); border-color: white;">View Memberships</a>
+
                 <a href="contact.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Contact
                     Us</a>
             </div>
@@ -399,10 +437,10 @@
                     <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
                         adventure.</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 

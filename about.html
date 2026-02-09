@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -30,13 +31,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="home-v2.html">Home 2</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
-                <li><a href="classes.html">Classes</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm navbar-btn"><i
+                            class="fas fa-user-plus me-2"></i>Join
+                        Now</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
@@ -55,7 +56,7 @@
     <!-- Hero Section -->
     <section class="hero" style="background-image: url('./images/hero-bg.png');">
         <div class="hero-content">
-            <h1>About Summit Climb</h1>
+            <h1><i class="fas fa-info-circle me-3"></i>About Summit Climb</h1>
             <p>Building a community of passionate climbers since 2015</p>
         </div>
     </section>
@@ -63,22 +64,24 @@
     <!-- Our Story -->
     <section class="section">
         <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="reveal">
-                    <h2 class="mb-4">Our Story</h2>
-                    <p class="text-secondary mb-4">Founded in 2015, Summit Climb began with a simple mission: to make
-                        rock climbing accessible, safe, and fun for everyone. What started as a small bouldering gym has
-                        grown into one of the region's premier climbing facilities.</p>
-                    <p class="text-secondary mb-4">Our founders, passionate climbers themselves, recognized the need for
-                        a welcoming space where beginners could learn and experienced climbers could push their limits.
-                        Today, we serve over 5,000 members and continue to grow our community.</p>
-                    <p class="text-secondary">We're committed to fostering a supportive environment where climbers of
-                        all ages and abilities can challenge themselves, make friends, and discover the joy of climbing.
-                    </p>
-                </div>
-                <div class="reveal">
-                    <img src="./images/bouldering.png" alt="Summit Climb Facility" class="rounded-lg shadow-lg w-full">
-                </div>
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
+                <h2 class="mb-4 flex items-center justify-center"><i class="fas fa-book-open me-3"></i>Our Story</h2>
+                <p class="text-secondary text-lg mb-4">Founded in 2015, Summit Climb began with a simple mission: to
+                    make
+                    rock climbing accessible, safe, and fun for everyone. What started as a small bouldering gym has
+                    grown into one of the region's premier climbing facilities.</p>
+                <p class="text-secondary text-lg mb-4">Our founders, passionate climbers themselves, recognized the need
+                    for
+                    a welcoming space where beginners could learn and experienced climbers could push their limits.
+                    Today, we serve over 5,000 members and continue to grow our community.</p>
+                <p class="text-secondary text-lg">We're committed to fostering a supportive environment where climbers
+                    of
+                    all ages and abilities can challenge themselves, make friends, and discover the joy of climbing.
+                </p>
+            </div>
+            <div class="reveal max-w-5xl mx-auto">
+                <img src="https://images.unsplash.com/photo-1516900441533-219372f88373?q=80&w=1200&auto=format&fit=crop"
+                    alt="Summit Climb Facility" class="rounded-xl shadow-2xl w-full h-[500px] object-cover">
             </div>
         </div>
     </section>
@@ -87,49 +90,45 @@
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Meet Our Team</h2>
+                <h2 class="reveal"><i class="fas fa-users me-2"></i>Meet Our Team</h2>
                 <p class="text-lg text-secondary reveal">Expert climbers dedicated to your success</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="card text-center reveal">
-                    <div
-                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-3xl font-bold">
-                        SM
-                    </div>
-                    <h3 class="text-lg font-semibold mb-1">Sarah Martinez</h3>
-                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Head Instructor</p>
-                    <p class="text-sm text-secondary mt-2">15 years climbing experience</p>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&h=400&auto=format&fit=crop"
+                        alt="Sarah Martinez" class="w-32 h-32 mx-auto mb-6 rounded-full object-cover shadow-lg">
+                    <h3 class="text-xl font-bold mb-1">Sarah Martinez</h3>
+                    <p class="text-sm uppercase tracking-wider mb-3" style="color: var(--primary); font-weight: 700;">
+                        Head Instructor</p>
+                    <p class="text-secondary">15 years climbing experience & certified guide.</p>
                 </div>
 
                 <div class="card text-center reveal">
-                    <div
-                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-3xl font-bold">
-                        JC
-                    </div>
-                    <h3 class="text-lg font-semibold mb-1">James Chen</h3>
-                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Lead Coach</p>
-                    <p class="text-sm text-secondary mt-2">Competition climber & coach</p>
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&h=400&auto=format&fit=crop"
+                        alt="James Chen" class="w-32 h-32 mx-auto mb-6 rounded-full object-cover shadow-lg">
+                    <h3 class="text-xl font-bold mb-1">James Chen</h3>
+                    <p class="text-sm uppercase tracking-wider mb-3" style="color: var(--primary); font-weight: 700;">
+                        Lead Coach</p>
+                    <p class="text-secondary">Competition climber & national team coach.</p>
                 </div>
 
                 <div class="card text-center reveal">
-                    <div
-                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-3xl font-bold">
-                        EP
-                    </div>
-                    <h3 class="text-lg font-semibold mb-1">Emily Patel</h3>
-                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Youth Program Director</p>
-                    <p class="text-sm text-secondary mt-2">Certified youth instructor</p>
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&h=400&auto=format&fit=crop"
+                        alt="Emily Patel" class="w-32 h-32 mx-auto mb-6 rounded-full object-cover shadow-lg">
+                    <h3 class="text-xl font-bold mb-1">Emily Patel</h3>
+                    <p class="text-sm uppercase tracking-wider mb-3" style="color: var(--primary); font-weight: 700;">
+                        Youth Director</p>
+                    <p class="text-secondary">Certified specialist in youth sports development.</p>
                 </div>
 
                 <div class="card text-center reveal">
-                    <div
-                        class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white text-3xl font-bold">
-                        MT
-                    </div>
-                    <h3 class="text-lg font-semibold mb-1">Mike Thompson</h3>
-                    <p class="text-sm" style="color: var(--primary); font-weight: 600;">Safety Coordinator</p>
-                    <p class="text-sm text-secondary mt-2">AMGA certified guide</p>
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&h=400&auto=format&fit=crop"
+                        alt="Mike Thompson" class="w-32 h-32 mx-auto mb-6 rounded-full object-cover shadow-lg">
+                    <h3 class="text-xl font-bold mb-1">Mike Thompson</h3>
+                    <p class="text-sm uppercase tracking-wider mb-3" style="color: var(--primary); font-weight: 700;">
+                        Safety Lead</p>
+                    <p class="text-secondary">AMGA certified guide & rescue specialist.</p>
                 </div>
             </div>
         </div>
@@ -139,7 +138,7 @@
     <section class="section">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Safety First</h2>
+                <h2 class="reveal"><i class="fas fa-shield-alt me-2"></i>Safety First</h2>
                 <p class="text-lg text-secondary reveal">Industry-leading safety standards and protocols</p>
             </div>
 
@@ -171,10 +170,11 @@
     <!-- Careers -->
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container text-center">
-            <h2 class="reveal mb-4">Join Our Team</h2>
+            <h2 class="reveal mb-4"><i class="fas fa-briefcase me-2"></i>Join Our Team</h2>
             <p class="text-lg text-secondary mb-8 reveal">We're always looking for passionate climbers to join our team
             </p>
-            <a href="contact.html" class="btn btn-primary btn-lg reveal">View Open Positions</a>
+            <a href="contact.html" class="btn btn-primary btn-lg reveal">View Open Positions<i
+                    class="fas fa-search-plus ms-2"></i></a>
         </div>
     </section>
 
@@ -190,10 +190,10 @@
                     <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
                         adventure.</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 

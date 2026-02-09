@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -30,13 +31,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="home-v2.html">Home 2</a></li>
                 <li><a href="memberships.html" class="active">Memberships</a></li>
-                <li><a href="classes.html">Classes</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm navbar-btn"><i
+                            class="fas fa-user-plus me-2"></i>Join
+                        Now</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
@@ -55,16 +56,16 @@
     <!-- Hero Section -->
     <section class="hero" style="background-image: url('./images/hero-bg.png');">
         <div class="hero-content">
-            <h1>Find Your Perfect Membership</h1>
+            <h1><i class="fas fa-id-card me-3"></i>Find Your Perfect Membership</h1>
             <p>Flexible plans designed for climbers of all levels and lifestyles</p>
         </div>
     </section>
 
     <!-- Membership Plans -->
-    <section class="section">
+    <section class="section nav-clearance">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Choose Your Plan</h2>
+                <h2 class="reveal"><i class="fas fa-star me-2"></i>Choose Your Plan</h2>
                 <p class="text-lg text-secondary reveal">All memberships include access to our full facility and
                     equipment</p>
             </div>
@@ -98,7 +99,8 @@
                         </ul>
                     </div>
                     <div class="card-footer">
-                        <a href="login.html" class="btn btn-outline w-full">Get Day Pass</a>
+                        <a href="login.html" class="btn btn-outline w-full">Get Day Pass<i
+                                class="fas fa-ticket-alt ms-2"></i></a>
                     </div>
                 </div>
 
@@ -131,23 +133,21 @@
                                 <span class="text-primary">✓</span>
                                 <span class="text-secondary">Guest passes (2 per month)</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-primary">✓</span>
-                                <span class="text-secondary">Cancel anytime</span>
-                            </li>
+
                         </ul>
                     </div>
                     <div class="card-footer">
-                        <a href="login.html" class="btn btn-primary w-full">Start Membership</a>
+                        <a href="login.html" class="btn btn-primary w-full">Start Membership<i
+                                class="fas fa-bolt ms-2"></i></a>
                     </div>
                 </div>
 
                 <!-- Annual Membership -->
-                <div class="card reveal">
+                <div class="card reveal text-center">
                     <div class="card-header">
                         <h3 class="card-title">Annual</h3>
-                        <div class="text-4xl font-bold" style="color: var(--primary);">$899</div>
-                        <p class="text-secondary text-sm">$75/month - Save $169!</p>
+                        <div class="text-4xl font-bold" style="color: var(--primary); text-align: center;">$199</div>
+                        <p class="text-secondary text-sm" style="text-align: center;">$75/month - Save $169!</p>
                     </div>
                     <div class="card-body">
                         <ul class="space-y-3">
@@ -155,10 +155,7 @@
                                 <span class="text-primary">✓</span>
                                 <span class="text-secondary">All monthly benefits included</span>
                             </li>
-                            <li class="flex items-start gap-2">
-                                <span class="text-primary">✓</span>
-                                <span class="text-secondary">20% discount on classes</span>
-                            </li>
+
                             <li class="flex items-start gap-2">
                                 <span class="text-primary">✓</span>
                                 <span class="text-secondary">Priority event registration</span>
@@ -174,7 +171,8 @@
                         </ul>
                     </div>
                     <div class="card-footer">
-                        <a href="login.html" class="btn btn-outline w-full">Get Annual Plan</a>
+                        <a href="login.html" class="btn btn-outline w-full">Get Annual Plan<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -184,7 +182,7 @@
                 <!-- Family Plan -->
                 <div class="card reveal">
                     <div class="card-header">
-                        <h3 class="card-title">Family Plan</h3>
+                        <h3 class="card-title"><i class="fas fa-users me-2"></i>Family Plan</h3>
                         <div class="text-4xl font-bold" style="color: var(--primary);">$199</div>
                         <p class="text-secondary text-sm">Per month (up to 4 members)</p>
                     </div>
@@ -209,14 +207,15 @@
                         </ul>
                     </div>
                     <div class="card-footer">
-                        <a href="login.html" class="btn btn-primary w-full">Get Family Plan</a>
+                        <a href="login.html" class="btn btn-primary w-full">Get Family Plan<i
+                                class="fas fa-users ms-2"></i></a>
                     </div>
                 </div>
 
                 <!-- Student Discount -->
                 <div class="card reveal">
                     <div class="card-header">
-                        <h3 class="card-title">Student Discount</h3>
+                        <h3 class="card-title"><i class="fas fa-user-graduate me-2"></i>Student Discount</h3>
                         <div class="text-4xl font-bold" style="color: var(--primary);">$69</div>
                         <p class="text-secondary text-sm">Per month (with valid student ID)</p>
                     </div>
@@ -241,7 +240,8 @@
                         </ul>
                     </div>
                     <div class="card-footer">
-                        <a href="login.html" class="btn btn-primary w-full">Get Student Plan</a>
+                        <a href="login.html" class="btn btn-primary w-full">Get Student Plan<i
+                                class="fas fa-graduation-cap ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -251,7 +251,7 @@
     <!-- Comparison Table -->
     <section class="section" style="background-color: var(--bg-secondary);">
         <div class="container">
-            <h2 class="text-center mb-8 reveal">Compare Plans</h2>
+            <h2 class="text-center mb-8 reveal"><i class="fas fa-list-ul me-2"></i>Compare Plans</h2>
             <div class="overflow-x-auto">
                 <table class="w-full"
                     style="background-color: var(--bg-primary); border-radius: 1rem; overflow: hidden;">
@@ -309,9 +309,10 @@
     <!-- CTA Section -->
     <section class="section">
         <div class="container text-center">
-            <h2 class="reveal">Not Sure Which Plan is Right for You?</h2>
+            <h2 class="reveal"><i class="fas fa-question-circle me-2"></i>Not Sure Which Plan is Right for You?</h2>
             <p class="text-lg text-secondary mb-8 reveal">Contact our team for personalized recommendations</p>
-            <a href="contact.html" class="btn btn-primary btn-lg reveal">Contact Us</a>
+            <a href="contact.html" class="btn btn-primary btn-lg reveal">Contact Us<i
+                    class="fas fa-paper-plane ms-2"></i></a>
         </div>
     </section>
 
@@ -327,10 +328,10 @@
                     <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
                         adventure.</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 

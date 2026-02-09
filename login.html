@@ -13,10 +13,11 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
     <style>
         body {
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         .login-container {
@@ -25,7 +26,7 @@
             align-items: center;
             justify-content: center;
             background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
-            padding: 1.5rem;
+            padding: 4rem 1.5rem;
         }
 
         .login-card {
@@ -138,7 +139,7 @@
                 <span class="brand-name">Summit Climb</span>
             </a>
 
-            <h1 class="text-2xl font-bold text-center mb-2">Welcome Back!</h1>
+            <h1 class="text-2xl font-bold text-center mb-2"><i class="fas fa-sign-in-alt me-2"></i>Welcome Back!</h1>
             <p class="text-center text-secondary mb-6">Sign in to access your account</p>
 
             <!-- Social Login Buttons -->
@@ -192,7 +193,8 @@
                     <a href="#" class="text-sm" style="color: var(--primary);">Forgot password?</a>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-full mb-4">Sign In</button>
+                <button type="submit" class="btn btn-primary w-full mb-4">Sign In<i
+                        class="fas fa-arrow-right ms-2"></i></button>
 
                 <p class="text-center text-sm text-secondary">
                     Don't have an account?

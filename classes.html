@@ -29,6 +29,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -51,7 +52,9 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="btn btn-primary btn-sm">Join Now</a></li>
+                <li><a href="login.html" class="btn btn-primary btn-sm navbar-btn"><i
+                            class="fas fa-user-plus me-2"></i>Join
+                        Now</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
@@ -68,10 +71,11 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="section"
+    <section class="section nav-clearance"
         style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 4rem 0;">
         <div class="container text-center">
-            <h1 class="reveal" style="color: white; margin-bottom: 1rem;">Classes & Programs</h1>
+            <h1 class="reveal" style="color: white; margin-bottom: 1rem;"><i
+                    class="fas fa-graduation-cap me-3"></i>Classes & Programs</h1>
             <p class="text-xl reveal" style="color: rgba(255, 255, 255, 0.95);">Expert instruction for climbers of all
                 ages and skill levels</p>
         </div>
@@ -81,14 +85,14 @@
     <section class="section">
         <div class="container">
             <div class="text-center mb-12">
-                <h2 class="reveal">Find Your Perfect Class</h2>
+                <h2 class="reveal"><i class="fas fa-search me-2"></i>Find Your Perfect Class</h2>
                 <p class="text-lg text-secondary reveal">From first-timers to experienced climbers, we have something
                     for everyone</p>
             </div>
 
             <!-- Beginner Classes -->
             <div class="mb-16">
-                <h3 class="mb-8 reveal">Beginner Classes</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-seedling me-2"></i>Beginner Classes</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="card reveal">
                         <img src="./images/class.png" alt="Intro to Climbing"
@@ -98,367 +102,379 @@
                             protocols, and gain confidence on the wall.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Mon, Wed, Fri - 6:00 PM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>90 minutes</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 8 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$45 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-green-400 to-green-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🧗‍♀️</span>
+                            <span class="text-white text-6xl"><i class="fas fa-hiking"></i></span>
                         </div>
                         <h4 class="card-title">Beginner Fundamentals</h4>
                         <p class="text-secondary mb-4">Build a strong foundation with proper footwork, body positioning,
                             and movement techniques.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Tue, Thu - 7:00 PM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>2 hours</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 10 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$50 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🎯</span>
+                            <span class="text-white text-6xl"><i class="fas fa-bullseye"></i></span>
                         </div>
                         <h4 class="card-title">Bouldering Basics</h4>
                         <p class="text-secondary mb-4">Learn the essentials of bouldering including falling safely,
                             problem-solving, and route reading.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Sat - 10:00 AM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-history text-primary w-5"></i>
                                 <span>2 hours</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 6 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$55 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Intermediate Classes -->
             <div class="mb-16">
-                <h3 class="mb-8 reveal">Intermediate Classes</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-layer-group me-2"></i>Intermediate Classes</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-orange-400 to-orange-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🧗</span>
+                            <span class="text-white text-6xl"><i class="fas fa-mountain"></i></span>
                         </div>
                         <h4 class="card-title">Technique Development</h4>
                         <p class="text-secondary mb-4">Refine your climbing with advanced footwork, dynamic movements,
                             and efficient energy use.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Mon, Wed - 7:30 PM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>2 hours</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 8 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$60 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">⛓️</span>
+                            <span class="text-white text-6xl"><i class="fas fa-link"></i></span>
                         </div>
                         <h4 class="card-title">Lead Climbing</h4>
                         <p class="text-secondary mb-4">Learn to lead climb safely with proper clipping technique, rope
                             management, and fall practice.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Tue, Thu - 6:00 PM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>2.5 hours</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 6 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$70 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">📖</span>
+                            <span class="text-white text-6xl"><i class="fas fa-book-open"></i></span>
                         </div>
                         <h4 class="card-title">Route Reading</h4>
                         <p class="text-secondary mb-4">Develop your ability to read routes, plan sequences, and climb
                             more efficiently.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Sat - 2:00 PM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>2 hours</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 8 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$55 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Advanced Classes -->
             <div class="mb-16">
-                <h3 class="mb-8 reveal">Advanced Classes</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-fire me-2"></i>Advanced Classes</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-red-400 to-red-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">💪</span>
+                            <span class="text-white text-6xl"><i class="fas fa-dumbbell"></i></span>
                         </div>
                         <h4 class="card-title">Power & Strength</h4>
                         <p class="text-secondary mb-4">Build explosive power and finger strength for harder grades with
                             targeted training.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Mon, Wed, Fri - 6:00 AM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>90 minutes</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 6 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$75 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🎪</span>
+                            <span class="text-white text-6xl"><i class="fas fa-trophy"></i></span>
                         </div>
                         <h4 class="card-title">Competition Prep</h4>
                         <p class="text-secondary mb-4">Prepare for competitions with mental training, strategy, and
                             performance optimization.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Tue, Thu - 8:00 PM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>2 hours</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 6 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$80 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🏔️</span>
+                            <span class="text-white text-6xl"><i class="fas fa-map-marked-alt"></i></span>
                         </div>
                         <h4 class="card-title">Outdoor Transition</h4>
                         <p class="text-secondary mb-4">Learn to climb outdoors safely with anchor building, route
                             finding, and outdoor ethics.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Sun - 8:00 AM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>Full day</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 4 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$150 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Youth Programs -->
             <div class="mb-16">
-                <h3 class="mb-8 reveal">Youth Programs</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-child me-2"></i>Youth Programs</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-cyan-400 to-cyan-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">👶</span>
+                            <span class="text-white text-6xl"><i class="fas fa-baby"></i></span>
                         </div>
                         <h4 class="card-title">Little Climbers (Ages 4-6)</h4>
                         <p class="text-secondary mb-4">Introduction to climbing through games, activities, and fun
                             challenges for our youngest climbers.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Sat - 9:00 AM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>45 minutes</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 6 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$35 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-teal-400 to-teal-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">👧</span>
+                            <span class="text-white text-6xl"><i class="fas fa-walking"></i></span>
                         </div>
                         <h4 class="card-title">Youth Climbing (Ages 7-12)</h4>
                         <p class="text-secondary mb-4">Build strength, confidence, and skills in a fun, supportive
                             environment designed for kids.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Sat, Sun - 11:00 AM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>60 minutes</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 10 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$40 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
                         <div
                             class="bg-gradient-to-br from-lime-400 to-lime-600 rounded-lg mb-4 h-48 flex items-center justify-center">
-                            <span class="text-white text-6xl">🧑</span>
+                            <span class="text-white text-6xl"><i class="fas fa-user-friends"></i></span>
                         </div>
                         <h4 class="card-title">Teen Team (Ages 13-17)</h4>
                         <p class="text-secondary mb-4">Competitive team training for teens serious about climbing and
                             personal development.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Tue, Thu - 5:00 PM</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>2 hours</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>👥</span>
+                                <i class="fas fa-users text-primary w-5"></i>
                                 <span>Max 12 students</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$65 per class</span>
                             </div>
                         </div>
-                        <a href="signup.html" class="btn btn-primary w-full">Book Now</a>
+                        <a href="signup.html" class="btn btn-primary w-full">Book Now<i
+                                class="fas fa-calendar-check ms-2"></i></a>
                     </div>
                 </div>
             </div>
 
             <!-- Private Coaching -->
             <div>
-                <h3 class="mb-8 reveal">Private Coaching</h3>
+                <h3 class="mb-8 reveal"><i class="fas fa-user-tie me-2"></i>Private Coaching</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="card reveal">
                         <h4 class="card-title">1-on-1 Coaching</h4>
@@ -466,19 +482,20 @@
                             climbing style.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Flexible scheduling</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>60 or 90 minutes</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$100/hour</span>
                             </div>
                         </div>
-                        <a href="contact.html" class="btn btn-primary w-full">Schedule Session</a>
+                        <a href="contact.html" class="btn btn-primary w-full">Schedule Session<i
+                                class="fas fa-calendar-alt ms-2"></i></a>
                     </div>
 
                     <div class="card reveal">
@@ -487,19 +504,20 @@
                             semi-private setting.</p>
                         <div class="space-y-2 mb-4 text-sm text-secondary">
                             <div class="flex items-center gap-2">
-                                <span>📅</span>
+                                <i class="fas fa-calendar-alt text-primary w-5"></i>
                                 <span>Flexible scheduling</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>⏱️</span>
+                                <i class="fas fa-clock text-primary w-5"></i>
                                 <span>90 minutes</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <span>💰</span>
+                                <i class="fas fa-tag text-primary w-5"></i>
                                 <span>$150 per session</span>
                             </div>
                         </div>
-                        <a href="contact.html" class="btn btn-primary w-full">Schedule Session</a>
+                        <a href="contact.html" class="btn btn-primary w-full">Schedule Session<i
+                                class="fas fa-calendar-alt ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -509,14 +527,14 @@
     <!-- CTA Section -->
     <section class="section" style="background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);">
         <div class="container text-center">
-            <h2 class="reveal" style="color: white;">Ready to Start Learning?</h2>
+            <h2 class="reveal" style="color: white;"><i class="fas fa-rocket me-2"></i>Ready to Start Learning?</h2>
             <p class="text-xl mb-8 reveal" style="color: rgba(255, 255, 255, 0.95);">Book your first class today and
                 experience expert instruction</p>
             <div class="flex gap-4 justify-center flex-wrap reveal">
                 <a href="signup.html" class="btn btn-lg" style="background-color: white; color: var(--primary);">Sign Up
-                    Now</a>
+                    Now<i class="fas fa-user-plus ms-2"></i></a>
                 <a href="contact.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">Ask
-                    Questions</a>
+                    Questions<i class="fas fa-question-circle ms-2"></i></a>
             </div>
         </div>
     </section>
@@ -533,10 +551,10 @@
                     <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
                         adventure.</p>
                     <div class="social-icons">
-                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon" aria-label="YouTube">📹</a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
