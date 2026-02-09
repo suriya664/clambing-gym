@@ -970,3 +970,296 @@ small,
         margin-top: 0 !important;
     }
 }
+
+/* ========================================
+   CARD DESIGN SYSTEM
+   ======================================== */
+.card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.card-body {
+    text-align: center;
+    width: 100%;
+}
+
+.card-body p,
+.card-body .text-secondary {
+    text-align: center;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+/* Card Image */
+.card img {
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+/* Card Icon */
+.card .text-4xl,
+.card .text-5xl {
+    margin: 0 auto 1rem;
+}
+
+/* ========================================
+   BUTTON DESIGN SYSTEM
+   ======================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition-base);
+    gap: 0.5rem;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Primary Button */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+    box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+    color: white;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 78, 137, 0.3);
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 6px 16px rgba(0, 78, 137, 0.4);
+    color: white;
+}
+
+/* Accent Button */
+.btn-accent {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(26, 167, 236, 0.3);
+}
+
+.btn-accent:hover {
+    box-shadow: 0 6px 16px rgba(26, 167, 236, 0.4);
+    color: white;
+}
+
+/* Outline Button */
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Button Sizes */
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    border-radius: 10px;
+}
+
+.btn-lg {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    border-radius: 14px;
+}
+
+/* Full Width Button */
+.btn.w-full {
+    width: 100%;
+}
+
+/* ========================================
+   RESPONSIVE GRID SYSTEM
+   ======================================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: Specific column grids */
+@media (min-width: 1024px) {
+    .card-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card-grid-5 {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+
+    .card-grid,
+    .card-grid-2,
+    .card-grid-3,
+    .card-grid-4,
+    .card-grid-5 {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Equal Height Cards */
+.card-grid>.card {
+    height: 100%;
+}
+
+/* ========================================
+   PRICING CARD STYLES
+   ======================================== */
+.card-grid-5>.card,
+.card-grid-3>.card {
+    min-height: 400px;
+}
+
+/* Pricing Card Header */
+.card .card-header {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+/* Price Display */
+.card .text-4xl.font-bold {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Feature List Styling */
+.card ul.space-y-3 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul.space-y-3 li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    font-size: 0.9375rem;
+}
+
+.card ul.space-y-3 li span.text-primary {
+    color: var(--success) !important;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Popular Card Highlight */
+.card[style*="border: 2px solid"] {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg), 0 0 20px rgba(255, 107, 53, 0.15);
+}
+
+.card[style*="border: 2px solid"]:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-xl), 0 0 30px rgba(255, 107, 53, 0.25);
+}
+
+/* Card Body Flex Grow */
+.card .card-body.flex-grow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Testimonial Card Styles */
+.card .w-12.h-12.rounded-full {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+
+/* Card Icon Styles */
+.card .text-5xl {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}

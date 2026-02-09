@@ -60,6 +60,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="home-v2.html" class="active">Home 2</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="schedule.html">Classes</a></li>
                 <li><a href="facilities.html">Facilities</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
@@ -143,7 +144,7 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="reveal order-2 lg:order-1">
-                        <img src="https://images.unsplash.com/photo-1516900441533-219372f88373?auto=format&fit=crop&q=80&w=1200"
+                        <img src="https://wallwalkers.com.au/wp-content/themes/yootheme/cache/Hero-scaled-4691c2e6.jpeg"
                             alt="Bouldering Area" class="rounded-xl shadow-2xl w-full h-96 object-cover text-center">
                     </div>
                     <div class="reveal order-1 lg:order-2">
@@ -260,11 +261,76 @@
                             </li>
                         </ul>
                         <div class="text-center lg:text-left">
-                            <a href="classes.html#training" class="btn btn-accent btn-lg justify-center">Training
+                            <a href="facilities.html#training" class="btn btn-accent btn-lg justify-center">Training
                                 Classes<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Classes -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-12">
+                <h2 class="reveal"><i class="fas fa-graduation-cap me-2"></i>Featured Classes</h2>
+                <p class="text-lg text-secondary reveal">Expert-led instruction for climbers of all levels</p>
+            </div>
+
+            <div class="card-grid card-grid-3">
+                <div class="card reveal">
+                    <img src="./images/class.png" alt="Beginner Climbing Class"
+                        class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="card-title">Beginner Fundamentals</h3>
+                    <p class="text-secondary mb-4">Perfect for first-timers. Learn basic techniques, safety, and build
+                        confidence on the wall.</p>
+                    <div class="flex items-center justify-between mb-4 text-sm text-secondary">
+                        <span><i class="fas fa-calendar-alt me-2"></i>Mon, Wed, Fri</span>
+                        <span><i class="fas fa-clock me-2"></i>90 min</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="schedule.html" class="btn btn-primary w-full" data-booking="Beginner Fundamentals">Book
+                            Class</a>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <img src="https://images.squarespace-cdn.com/content/v1/566b9a002399a3bdabaf6fa5/00e933cb-f94f-4c99-8b48-dd404674f9e7/Allhiitclassphotos-6.jpg"
+                        alt="Advanced Technique Class" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="card-title">Advanced Technique</h3>
+                    <p class="text-secondary mb-4">Refine your skills with advanced footwork, dynamic moves, and route
+                        reading strategies.</p>
+                    <div class="flex items-center justify-between mb-4 text-sm text-secondary">
+                        <span><i class="fas fa-calendar-alt me-2"></i>Tue, Thu</span>
+                        <span><i class="fas fa-clock me-2"></i>2 hours</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="schedule.html" class="btn btn-primary w-full" data-booking="Advanced Technique">Book
+                            Class</a>
+                    </div>
+                </div>
+
+                <div class="card reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw111XkebSQsVPIya3BQFIQTk7YjCZbebbqg&sUSE"
+                        alt="Youth Programs Class" class="rounded-lg mb-4 w-full h-48 object-cover">
+                    <h3 class="card-title">Youth Programs</h3>
+                    <p class="text-secondary mb-4">Fun and safe climbing for kids ages 6-16. Build
+                        strength,confidence,will power
+                        and friendships.</p>
+                    <div class="flex items-center justify-between mb-4 text-sm text-secondary">
+                        <span><i class="fas fa-calendar-alt me-2"></i>Sat, Sun</span>
+                        <span><i class="fas fa-clock me-2"></i>60 min</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="schedule.html" class="btn btn-primary w-full" data-booking="Youth Programs">Book
+                            Class</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="schedule.html" class="btn btn-outline">View All Classes</a>
             </div>
         </div>
     </section>
@@ -277,7 +343,7 @@
                 <p class="text-lg text-secondary reveal">Choose the plan that fits your climbing goals</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+            <div class="card-grid card-grid-5 mb-8">
                 <!-- Day Pass Card -->
                 <div class="card reveal flex flex-col text-center">
                     <div class="card-header">
@@ -333,17 +399,14 @@
                         </ul>
                     </div>
                     <div class="card-footer">
-                        <a href="signup.html" class="btn btn-outline w-full justify-center">Get Student Plan<i
+                        <a href="signup.html" class="btn btn-outline w-full justify-center">Student Plan<i
                                 class="fas fa-graduation-cap ms-2"></i></a>
                     </div>
                 </div>
 
                 <!-- Monthly Card -->
                 <div class="card reveal flex flex-col text-center" style="border: 2px solid var(--primary);">
-                    <div
-                        style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background-color: var(--primary); color: white; padding: 4px 16px; border-radius: 12px; font-size: 0.875rem; font-weight: 600; white-space: nowrap;">
-                        MOST POPULAR
-                    </div>
+
                     <div class="card-header">
                         <div class="text-4xl mb-4 text-primary mx-auto"><i class="fas fa-calendar-check"></i></div>
                         <h3 class="card-title">Monthly</h3>
@@ -550,6 +613,66 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <img src="./favicon.png" alt="Summit Climb Logo">
+                        <span class="brand-name">Summit Climb</span>
+                    </a>
+                    <p class="text-secondary mt-3">Your premier destination for indoor rock climbing, bouldering, and
+                        adventure.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="memberships.html">Memberships</a></li>
+                        <li><a href="schedule.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Facilities</h4>
+                    <ul class="footer-links">
+                        <li><a href="facilities.html#bouldering">Bouldering</a></li>
+                        <li><a href="facilities.html#top-rope">Top-Rope</a></li>
+                        <li><a href="facilities.html#lead">Lead Climbing</a></li>
+                        <li><a href="facilities.html#training">Training Zone</a></li>
+                        <li><a href="shop.html">Shop & Rentals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:+1555CLIMBUP">+1-555-CLIMB-UP</a></li>
+                        <li><a href="mailto:info@summitclimb.com">info@summitclimb.com</a></li>
+                        <li><a href="waiver.html">Waiver & Liability</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Summit Climb. All rights reserved. | <a href="terms.html"
+                        style="color: var(--text-tertiary);">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
 
     <!-- JavaScript -->
     <script src="./script.js"></script>
