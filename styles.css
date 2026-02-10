@@ -521,8 +521,10 @@ small,
     }
 }
 
-.navbar-menu .theme-toggle-li {
-    display: none;
+@media (min-width: 1025px) {
+    .navbar-menu .theme-toggle-li {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
