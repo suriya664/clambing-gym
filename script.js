@@ -469,11 +469,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize theme
     const themeManager = new ThemeManager();
 
-    // Theme toggle button
-    const themeToggle = document.querySelector('.theme-toggle');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', () => themeManager.toggle());
-    }
+    // Theme toggle buttons (desktop and mobile)
+    const themeToggles = document.querySelectorAll('.theme-toggle');
+    themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => themeManager.toggle());
+    });
 
     // Initialize navigation
     new NavigationManager();

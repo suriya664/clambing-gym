@@ -65,13 +65,20 @@
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="theme-toggle-li">
+                    <button
+                        class="theme-toggle w-full flex items-center justify-between p-3 rounded-lg hover:bg-secondary/10">
+                        <span>Switch Theme</span>
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </li>
                 <li><a href="login.html" class="btn btn-primary btn-sm navbar-btn"><i
                             class="fas fa-user-plus me-2"></i>Join
                         Now</a></li>
             </ul>
 
             <div class="flex items-center gap-3">
-                <button class="theme-toggle" aria-label="Toggle theme">
+                <button class="theme-toggle desktop-only" aria-label="Toggle theme">
                     <span class="theme-icon">🌙</span>
                 </button>
                 <button class="hamburger" aria-label="Toggle menu">
@@ -89,7 +96,7 @@
         <div class="container">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="reveal">
-                    <h1 class="mb-6 font-bold" style="color: white; font-size: 3.5rem; line-height: 1.1;">Your Climbing Journey
+                    <h1 class="mb-6 hero-title-large" style="color: white;">Your Climbing Journey
                         Begins Today</h1>
                     <p class="text-xl mb-8" style="color: rgba(255, 255, 255, 0.95);">Experience the thrill of climbing
                         in a safe, supportive environment. Whether you're a complete beginner or seasoned climber, we
@@ -138,8 +145,8 @@
                 <div class="text-center mb-12">
                     <h2 class="reveal mx-auto flex items-center justify-center"><i
                             class="fas fa-mountain me-3"></i>Bouldering Area</h2>
-                    <p class="text-xl text-secondary reveal mx-auto max-w-2xl mt-4">Our expansive bouldering area
-                        features walls up to 15 feet high with premium crash pads throughout. With over 60 problems
+                    <p class="text-xl text-secondary reveal mx-auto max-w-2xl mt-4 text-center">Our expansive bouldering
+                        area features walls up to 15 feet high with premium crash pads throughout. With over 60 problems
                         ranging from V0 to V10, there's something for every skill level.</p>
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -170,8 +177,8 @@
                                 <span class="text-secondary">Dedicated warm-up and beginner zones</span>
                             </li>
                         </ul>
-                        <div class="text-center lg:text-left">
-                            <a href="facilities.html#bouldering" class="btn btn-primary btn-lg justify-center">Start
+                        <div class="text-center">
+                            <a href="facilities.html#bouldering" class="btn btn-primary btn-lg">Start
                                 Bouldering<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -211,8 +218,8 @@
                                 <span class="text-secondary">Varied terrain including cracks, aretes, and faces</span>
                             </li>
                         </ul>
-                        <div class="text-center lg:text-left">
-                            <a href="facilities.html#ropes" class="btn btn-secondary btn-lg justify-center">Start Rope
+                        <div class="text-center">
+                            <a href="facilities.html#ropes" class="btn btn-secondary btn-lg">Start Rope
                                 Climbing<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -260,8 +267,8 @@
                                 <span class="text-secondary">Yoga mats and stretching area</span>
                             </li>
                         </ul>
-                        <div class="text-center lg:text-left">
-                            <a href="facilities.html#training" class="btn btn-accent btn-lg justify-center">Training
+                        <div class="text-center">
+                            <a href="facilities.html#training" class="btn btn-accent btn-lg">Training
                                 Classes<i class="fas fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -343,7 +350,7 @@
                 <p class="text-lg text-secondary reveal">Choose the plan that fits your climbing goals</p>
             </div>
 
-            <div class="card-grid card-grid-5 mb-8">
+            <div class="card-grid card-grid-5 pricing-grid mb-8">
                 <!-- Day Pass Card -->
                 <div class="card reveal flex flex-col text-center">
                     <div class="card-header">
