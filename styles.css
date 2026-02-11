@@ -413,13 +413,7 @@ small,
 /* Mobile: Remove bottom border, add left border */
 @media (max-width: 768px) {
     .navbar-menu a.active::after {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: auto;
-        width: 3px;
-        height: 100%;
-        border-radius: 0 3px 3px 0;
+        display: none;
     }
 }
 
