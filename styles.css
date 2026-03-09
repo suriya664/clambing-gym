@@ -126,19 +126,19 @@ body h6 {
 }
 
 body h1 {
-    font-size: 6.5rem;
+    font-size: 4.5rem;
     font-weight: 800;
     line-height: 1.1;
 }
 
 body h2 {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
 body h3 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.4;
 }
@@ -156,55 +156,55 @@ body h3 {
 }
 
 .hero-title-large {
-    font-size: 9rem;
+    font-size: 6rem;
     font-weight: 900;
     line-height: 1.05;
 }
 
 @media (max-width: 1024px) {
     .hero-title-large {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (max-width: 768px) {
     .hero-title-large {
-        font-size: 3.5rem;
+        font-size: 2.75rem;
     }
 }
 
 body h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5;
 }
 
 body h5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
 body h6 {
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 600;
 }
 
 /* Mobile Typography */
 @media (max-width: 768px) {
     body h1 {
-        font-size: 2.75rem;
+        font-size: 2.25rem;
     }
 
     body h2 {
-        font-size: 2.75rem;
+        font-size: 2rem;
     }
 
     body h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     body h4 {
-        font-size: 1.25rem;
+        font-size: 1.125rem;
     }
 }
 
