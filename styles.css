@@ -112,12 +112,12 @@ body {
 }
 
 /* Typography Hierarchy */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
@@ -125,19 +125,19 @@ h6 {
     margin-bottom: 1rem;
 }
 
-h1 {
+body h1 {
     font-size: 6.5rem;
     font-weight: 800;
     line-height: 1.1;
 }
 
-h2 {
+body h2 {
     font-size: 3.75rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-h3 {
+body h3 {
     font-size: 1.875rem;
     font-weight: 600;
     line-height: 1.4;
@@ -173,37 +173,37 @@ h3 {
     }
 }
 
-h4 {
+body h4 {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.5;
 }
 
-h5 {
+body h5 {
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-h6 {
+body h6 {
     font-size: 1rem;
     font-weight: 600;
 }
 
 /* Mobile Typography */
 @media (max-width: 768px) {
-    h1 {
+    body h1 {
         font-size: 2.75rem;
     }
 
-    h2 {
+    body h2 {
         font-size: 2.75rem;
     }
 
-    h3 {
+    body h3 {
         font-size: 1.5rem;
     }
 
-    h4 {
+    body h4 {
         font-size: 1.25rem;
     }
 }
