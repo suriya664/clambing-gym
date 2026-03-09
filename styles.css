@@ -126,7 +126,7 @@ h6 {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 6.5rem;
     font-weight: 800;
     line-height: 1.1;
 }
@@ -156,8 +156,8 @@ h3 {
 }
 
 .hero-title-large {
-    font-size: 5.5rem;
-    font-weight: 800;
+    font-size: 9rem;
+    font-weight: 900;
     line-height: 1.05;
 }
 
